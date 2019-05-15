@@ -1,0 +1,5037 @@
+﻿body{
+	font-size:16px;
+	font-family:'arial' , sans-serif;
+	background:#D4D4D4;
+	position:relative;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: none;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+
+
+
+
+@media screen and (min-width:375px)
+{
+		#Slider #Inicio .botones_inicio > *{
+
+			display: inline-block;
+			width: 40%;
+			margin: 5px 2.5%;
+			padding: 15px 2.5%;
+			color: white;
+			text-decoration: none;
+			font-size:16px;
+			font-family:'arial' , sans-serif;
+			font-weight:bold;
+		}
+		#Slider #Inicio .botones_inicio{
+			 
+		     width:100%;
+		     margin:0px;
+		     /*background:red;*/
+		     margin-top:-50px;
+		     top:0px;
+		     
+
+		}
+
+		#Slider #Inicio .botones_inicio a{
+			text-decoration:none;
+			color:white;
+			font-size:17px; 
+		     
+
+		}
+
+
+		#slider #inicio a{
+			/*por si el texto de los botones quiero que tengan color*/
+
+		}
+
+		/*Aspecto Bonones Individuales*/
+		#Slider #Inicio #contacta_me{
+			top:-200px;
+			background: red;
+			cursor: pointer;
+		}
+
+
+
+		#Slider #Inicio #conoce_mis_trabajos{
+			background: #F8931F;
+			cursor: pointer;
+		}
+
+		#formulario_contacto{
+				position:fixed;
+				left:-201px;/*-301*/
+				top:80px;
+				/*background:green;*/
+				border:1px solid green;
+				width:200px;
+				border-top:1px solid black;
+				/*box-shadow: 50px 0px 0px 10px rgba(0,0,0,.5);*/
+				font-family:'arial';
+				 z-index:999;
+				 display:block;
+				 transition:0.5s;
+
+			}
+
+			#formulario_contacto.active{
+			  left:0px;
+			}
+
+
+
+			#formulario_contacto #cerrar_formulario{
+				position:absolute;
+				width:40px;
+				height:40px;
+				right:0%;
+				transform:translateX(41px);
+				z-index:999;
+				top:0%;
+				background:red;
+
+			}
+
+
+
+			#formulario_contacto #cerrar_formulario:hover{
+				cursor:pointer;
+
+			}
+
+			#formulario_contacto #cerrar_formulario:before{
+				font-family:'icomoon';
+				content:"\ea84";
+				font-size:20px;
+				text-align:center;
+				top:10px;
+				left:10px;
+				position:relative;
+				color:#fff;
+
+			}
+
+			#formulario_contacto #cerrar_formulario.active:before{
+				font-family:'icomoon';
+				content:"\ea0f";
+				font-size:20px;
+				text-align:center;
+				top:10px;
+				left:10px;
+				position:relative;
+				color:#000000;
+
+			}
+
+			#formulario_contacto figure{
+				top:5px;
+				height:70px;
+				width:100%;
+				margin:0px;
+				padding:0px;
+				text-align:center;
+				background:#2963a4;
+
+			}
+
+			#formulario_contacto figure img{
+				position:relative;
+				bottom:5px;
+				top:5px;
+				height:80%;
+				margin:0px;
+
+			}
+
+			#formulario_contacto  #Enviar_tu_mensaje{
+
+			    position:relative;
+			    margin-left:20%;
+			    margin-right:0%;
+				margin:20px;
+				width:90%;
+				margin-left:25%;
+			}
+
+			#formulario_contacto input,
+			#formulario_contacto textarea{
+				display:block;
+				margin: 20px;
+				border:none;
+				border-bottom:2px solid gray;
+				width:90%;
+				margin-left:5%;
+				padding-bottom:3px;
+				margin-bottom:40px;
+				font-weight:bold;
+			}
+
+			#formulario_contacto textarea{
+				resize: none;
+				height:80px;
+			}
+
+			/*dodigo para estilo del boton*/
+			#formulario_contacto #boton_enviar{
+				    background:#3E3E3E;
+			      	color:#D4D4D4;
+			      	cursor:pointer;
+			}
+
+			#formulario_contacto #boton_enviar:hover{
+				    background:red;
+			      	color:black;
+			}
+
+
+		#Slider #Concacto .cuerpo_contacto_yahoo .iconos_contacto_linkeados_yahoo #c_yahoo_texto_link a{
+		   position:relative;
+		   text-decoration:none;
+		   width:100%;
+		   height:auto;
+		   left:0%;
+		   background:none;
+		   display:block;
+		   /*background:red;
+		   opacity:0.5;*/
+		   color:black;
+		   font-size:0.6em;
+		   margin-bottom:10px;
+		}
+
+		#Slider #Concacto .cuerpo_contacto_yahoo .iconos_contacto_linkeados_yahoo #c_yahoo_texto_link a{
+		    position:relative;
+		   top:20px;
+		   text-decoration:none;
+		   width:100%;
+		   height:auto;
+		   background:none;
+		   /*background:red;
+		   opacity:0.5;*/
+		   color:black;
+		   display:block;
+		   font-size:1em;
+		   margin-bottom:10px;
+		}
+
+		#Slider #Concacto .cuerpo_contacto_yahoo .iconos_contacto_linkeados_yahoo #c_yahoo_texto_link a{
+		    position:relative;
+		   top:20px;
+		   text-decoration:none;
+		   width:100%;
+		   height:auto;
+		   background:none;
+		   /*background:red;
+		   opacity:0.5;*/
+		   color:black;
+		   display:block;
+		   font-size:1.2em;
+		   margin-bottom:10px;
+		}
+
+
+}
+
+/*********************************
+*                                *
+*******Seción de la CABEZERA******
+*                                *
+**********************************/
+
+/*Tamaño de la cabezera contiene menu,logo,impresos mendez*/
+
+header{
+	width:100%;
+	height:40px; 
+	background:#395B81;
+	position:relative;
+}
+/**/
+header h1{
+	display:none;
+}
+/**/
+
+/*Contendero de la barra de navegación*/
+
+
+
+header nav .ioMenuMovil{
+	height:50px;
+	width:120px;
+	cursor:pointer;
+	line-height:40px;
+	margin:0px 0px 0px 10px;
+	padding:3px;
+}
+
+header nav.ioMenuMovil img{
+	height:100%;
+}
+
+/*Tarjeta de entrada y salida del menu movil*/
+
+header nav #card_menu{
+    display:none;
+	position:relative;
+	width:230px;/*poner230*/
+	/*height:580px;*/
+	top:-55px;
+	left:3px;
+	z-index:950;
+	padding-top:-5px;
+	padding-bottom:50px;
+	background:rgba(255,255,255,1.0);
+
+
+	
+}
+
+
+
+/*todo de la card_menu*/
+
+header nav #card_menu #logo_menu{
+	/*ajustar la posicion */
+	margin-top:0px;
+
+
+}
+/*se ajustara a car_menu figure*/
+header nav #card_menu #logo_menu img{
+
+	width:100%;
+}
+
+header nav #card_menu  ul{
+	
+	margin-top:10px;
+
+}
+
+/*Enlazar los elementos de la lista*/
+
+header nav #card_menu ul li{
+	list-style:none;
+	font-size:1.5em;
+	line-height: 37px;
+}
+
+header nav #card_menu ul li a{
+	text-decoration:none;
+	color:black;
+}
+
+/*Botones de Desplazamiento dentro del header version movil*/
+
+header #prev_section,
+header #next_section{
+
+	width:25px;
+	height:25px;
+	/*background:red;*/
+	cursor:pointer;
+	/*overflow:hidden;*/
+	margin:8px;
+	position:absolute;
+	top:0px;
+	overflow:hidden;
+}
+
+header #prev_section{
+	right:35px;
+}
+header #next_section{
+	right:5px;
+}
+/*botones de desplazamiento en version de escritorio*/
+header #prev_section img,
+header #next_section img{
+	width:20px;
+	height:25px;
+	top:0px;
+	left:0px;
+	position:relative;
+}
+/*eN CASO DE USAR LA MISMA FLECHA*/
+
+header #next_section img{
+	transform:rotate(180deg);
+}
+
+/*********************************
+*                                *
+**********Seción del Slider*******
+*                                *
+**********************************/
+
+#Slider{
+	width:100%;
+	height:auto;
+	position:relative;
+	
+	background:black;
+	
+	}
+/*referente a la navegación en la pagina*/
+#Slider section.slide{
+	position:absolute;
+	height:auto;
+	width:100%;
+	top:0px;
+	left:0px;
+}
+/*******************************************
+********************************************
+***********SECCIÖN DE PAGINA DE INICIO******
+***********Versión movil********************
+********************************************/
+#Slider #Inicio{
+	height:85vh;
+	background:#395B81;
+	font-family:'arial';
+	position:absolute;
+	text-align: center;
+	padding-bottom:90px;
+
+
+	/*height: 85vh;*/
+	position: relative;
+	
+
+}
+
+#Slider #Inicio .animación_inicio{
+	
+	background:none;
+	width:80%;
+	margin-left:10%;
+	height:280px;
+	min-height:400px;
+	position:absolute;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: none;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#Slider #Inicio .logo_inicio{
+	background: none;
+	/*background:rgba(57,91,129,,0.8);
+	*/
+	position:relative;
+	
+	width:60vw;
+	margin-left:20vw;
+	min-height:430px;
+
+
+}
+
+#Slider #Inicio .logo_inicio h2{
+	font-size:1.9em;
+	color:#fff;
+	font-weight:bold;
+	text-shadow:3px 3px 0px black,
+	-3px -3px 0px black;
+}
+
+#Slider #Inicio .logo_inicio h3{
+	font-size:1.3em;
+	color:#fff;
+	font-weight:lighter;
+	display:block;
+	padding:0px;
+	margin-top:-5px;
+}
+#Slider #Inicio .logo_inicio strong{
+  float: left;
+  position: relative;
+  height:25px;
+  /*background:blue;*/
+  transform:translateX(50%);
+  width:50%;
+  overflow:hidden;
+  margin-top:5px;
+
+}
+
+#Slider #Inicio .logo_inicio span{
+	font-size:20px;
+	color:#fff;
+	font-weight:lighter;
+	display:block;
+	width:100%;
+	height:25;
+	line-height:1.3em;
+	font-weight:bold;
+	-webkit-animation: cambiar 7s  infinite;
+	text-transform: uppercase;
+	
+}
+#Slider #Inicio .logo_inicio #c{
+	color:#00ffff;
+
+}
+#Slider #Inicio .logo_inicio #m{
+	color:#cf3476;
+}
+#Slider #Inicio .logo_inicio #y{
+	color:#FFFF00;
+}
+
+
+@keyframes cambiar{
+
+0%  {transform:translateY(0px);}
+25%  {transform:translateY(-27px);}
+50%  {transform:translateY(-55px);}
+75%  {transform:translateY(-27px);}
+100%  {transform:translateY(0px);}
+
+}
+
+/*
+
+
+
+webkit-animation:tarjetasdos 10s ease infinite;
+	-moz-animation:tarjetasdos 10s ease infinite;
+	background-size: 400% 400%;
+	display:inline-block;
+
+}
+
+@keyframes tarjetasdos{
+	0% {background-position: 0% 25%;}
+	25% {background-position: 25% 50%;}
+	50% {background-position: 50% 100%;}
+	100% {background-position: 0% 50%;}
+}
+
+
+
+
+
+
+
+
+
+*/
+#Slider #Inicio .logo_inicio figure,
+#Slider #Inicio .logo_inicio figure img{
+	width:80%;
+	padding-left:8%;
+	margin:0;
+	padding-top:19px;
+}
+
+
+
+#Slider #Inicio .botones_inicio > *{
+
+	display: inline-block;
+	width: 40%;
+	margin: 5px 2.5%;
+	padding: 15px 2.5%;
+	color: white;
+	text-decoration: none;
+	font-size:16px;
+	font-family:'arial' , sans-serif;
+	font-weight:bold;
+}
+#Slider #Inicio .botones_inicio{
+	 
+     width:100%;
+     margin:0px;
+     /*background:red;*/
+     margin-top:-50px;
+
+}
+
+#Slider #Inicio .botones_inicio a{
+	text-decoration:none;
+	color:white;
+	font-size:17px; 
+     
+
+}
+
+
+#slider #inicio a{
+	/*por si el texto de los botones quiero que tengan color*/
+
+}
+
+/*Aspecto Bonones Individuales*/
+#Slider #Inicio #contacta_me{
+	top:-200px;
+	background: red;
+	cursor: pointer;
+}
+
+
+
+#Slider #Inicio #conoce_mis_trabajos{
+	background: #F8931F;
+	cursor: pointer;
+}
+
+/*******************************************
+********************************************
+********SECCIÖN DE PAGINA DE Conocenos******
+********************************************
+********************************************/
+
+
+#Slider #Conocenos{
+	
+	height:90vh;
+	background:#395B81;
+	font-family:'arial';
+	position:absolute;
+	text-align: center;
+	padding-bottom:300px;
+
+
+	/*height: 85vh;*/
+	position: relative;
+}
+
+
+#Slider #Conocenos  span{
+	position:relative;
+    top:70px;
+	margin-left:10vw;
+	margin-right:10vw;
+	/*background:cyan;*/
+	font-size:2.8em;
+	text-align:justify; 
+	color:black;
+
+}
+
+
+#Slider #Conocenos #contenedor_conocenos{
+
+    top:140px;
+	position:relative;
+	margin-left:4vw;
+	margin-right:4vw;
+	/*background:green;*/
+	height:auto;
+
+}
+
+#Slider #Conocenos #contenedor_conocenos #div_img_conocenos{
+	width:100%;
+	/*background:cyan;*/
+	padding-bottom:5%;
+	position:relative;
+	padding-bottom:0px;
+
+}
+
+#Slider #Conocenos #contenedor_conocenos #div_img_conocenos figure,
+#Slider #Conocenos #contenedor_conocenos #div_img_conocenos figure img{
+	
+	width:250px;
+	height:250px;
+    transform:translateX(-5%);
+	margin:0;
+	padding-top:9px;
+	padding-bottom:19px;
+
+}
+
+
+
+
+
+#Slider #Conocenos #contenedor_conocenos .contenedor_textos1 {
+	
+	width:100%;
+	height:auto;
+	/*background:#fff;*/
+	top:-50px;
+	position:relative;
+}
+
+#Slider #Conocenos #contenedor_conocenos .contenedor_textos2 {
+	
+	width:100%;
+	height:auto;
+	/*background:#fff;
+	border-radius:25%;*/
+	top:0px;
+	position:relative;
+	padding-bottom:100px;
+}
+	#Slider #Conocenos .contenedor_textos1 p,
+	#Slider #Conocenos .contenedor_textos2 p{
+		color :red;
+		font-size:2em;
+}
+	
+
+
+	#Slider #Conocenos .contenedor_textos1  span,
+	#Slider #Conocenos .contenedor_textos2  span{
+		position:relative;
+		width:100%;
+		height:auto;
+		top:-25px;
+		/*background:black;*/
+		color:black;
+		font-size:1.6em;
+		margin: 5px 30px;
+		text-align:justify;
+		margin-left: auto;
+	    margin-right: auto;
+	    
+
+
+}
+/*******************************************
+********************************************
+*********SECCIÖN DE PAGINA DE Trabajos******
+********************************************
+********************************************/
+#Slider #Trabajos{
+	background: #f1f1f1	;
+	width: 100%;
+}
+#Slider #Trabajos #content_Trabajos{
+	margin-top: 175px;
+	margin-left:10vw;
+	margin-right:10vw;
+}
+
+
+
+#Slider #Trabajos  #muestras{
+	margin-top: 175px;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 50px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack:justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+
+
+
+.Trabajos{
+	top:110px;
+	margin-left:5vw;
+	margin-right:5vw;
+}
+
+
+.Trabajos-container{
+	
+	display:inline-block;
+	width:100%;
+	text-align: center;
+	padding-bottom:50px;
+	/*background:red;*/
+
+}
+
+.Trabajos-item{
+	/*background:blue;*/
+	display:inline-block;
+	width:200px;
+	height:300px;
+	position: relative;
+	overflow: hidden;
+	margin:0px 2.5px;
+	margin-bottom:30px;
+}
+
+.Trabajos-img{
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	width:100%
+}
+
+.Trabajos-text {
+	position:absolute;
+	text-align:left;
+	width:100%;
+	height:272px;
+	bottom:90px;
+	padding-bottom:50px;
+	top:-80px;
+	padding:20px;
+	background:black;
+	opacity:0.7;
+    
+	-webkit-transform: translateY(300px);
+
+	-ms-transform: translateY(300px);
+
+	transform: translateY(300px);
+
+	-webkit-transition: all 0.5s ease-out;
+
+	transition: all 0.5s ease-out;
+}
+
+.Trabajos-text p{
+	text-align:left;
+	transform: translateX(-17px);
+	font-size:18px;
+	/*background:blue;*/
+	top:20px;
+	color:#fff;
+	opacity:1;
+	width:100%;
+}
+.Trabajos-text h3{
+	top:-200px;
+	/*background:yellow;*/
+	text-align:left;
+	font-size:20px;
+	color:red;
+	transform: translateX(-17px);
+	opacity:1;
+	width:100%;
+
+}
+
+
+.Trabajos-item:hover .Trabajos-text{
+	-webkit-transform: translateY(0%);
+	-ms-transform: translateY(0%);
+	transform: translateY(0%);
+}
+
+.Trabajos-item:hover .Trabajos-img{
+	-webkit-transform: scale(1.15);
+	-ms-transform: scale(1.15);
+	transform: scale(1.15);
+}
+/*******************************************
+********************************************
+******SECCIÖN DE PAGINA DE Portafolio******
+********************************************
+********************************************/
+
+
+
+
+
+#Slider #Portafolio{
+	
+	width: 100%;
+}
+
+#slider #Portafolio #categorias{
+	width: 100%;
+	text-align: center;
+	background: none;
+	margin: 40px 0px;
+}
+#slider #Portafolio #categorias h2{
+	margin: 5px 5px;
+	background: #29abe2;
+	color: black;
+	display: inline-block;
+	font-weight: lighter;
+	font-size: 1.1em;
+	width: 150px;
+	line-height: 40px;
+	text-align: center;
+	box-shadow: 0px 0px 3px #5A5A5A;
+	background: white;
+	border-radius: 2px;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+#slider #Portafolio #categorias h2:nth-of-type(1){
+	background:#efb810;
+	color: white;
+}
+#Slider #Portafolio #content_portfolio{
+	top:110px;
+	margin-left:10vw;
+	margin-right:10vw;
+}
+
+#Slider #Portafolio #jobs{
+	width: 100%;
+	text-align: center;
+	padding-bottom: 50px;
+}
+#Slider #Portafolio #jobs article{
+	display: inline-block;
+	vertical-align: top;
+	background:none;
+	width: 200px;
+	height: 320px;
+	text-decoration: none;
+	margin: 10px 5px;
+}
+
+
+
+#Slider #Portafolio #jobs .tarjeta-wrap{
+	margin: 10px;
+	-webkit-perspective: 800;
+	-moz-perspective: 800;
+
+	perspective: 800;
+}
+/*degradado por categoria Tarjetas*/
+
+#Slider #Portafolio #jobs .tarjetas{
+	width: 200px;
+	height:320px;
+	position: relative;
+	/*background:linear-gradient(132deg,#F98866,#80BD9E);*/
+	background:#90afc5;
+	/*animation:tarjetasuno 30s ease infinite;*/
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: .7s ease;
+	-moz-transition: .7s ease;
+	transition: .7s ease;
+	-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	-moz-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+}
+/*
+@keyframes tarjetasuno{
+	0%{background-position: 0% 50%;}
+	50%{background-position:100% 50%;}
+	100%{background-position: 0% 50%;}
+}
+
+*/
+
+
+#Slider #Portafolio #jobs .adelante_tarjetas, .atras_tarjetas{
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	top:0;
+	left:0;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+#Slider #Portafolio #jobs .adelante_tarjetas img{
+	width: 100%;
+	height:85%;
+}
+
+#Slider #Portafolio #jobs .adelante_tarjetas  span{
+	position:relative;
+	top:1px;
+	color:white;
+	text-shadow: 2px 2px 4px #000000;
+	font-weight:bold;
+}
+
+#Slider #Portafolio #jobs .atras_tarjetas {
+    width: 100%;
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+    position:relative;
+	padding:0px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	
+	display: -moz-box;
+	display: -moz-flex;
+	
+	display: flex;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-align:left;
+	color: #fff;
+	font-family: "open sans";
+	background: linear-gradient(132deg,#336b87,#2a3132,#763626);
+	-webkit-animation:tarjetasdos 10s ease infinite;
+	-moz-animation:tarjetasdos 10s ease infinite;
+	background-size: 400% 400%;
+	display:inline-block;
+
+}
+
+@keyframes tarjetasdos{
+	0% {background-position: 0% 25%;}
+	25% {background-position: 25% 50%;}
+	50% {background-position: 50% 100%;}
+	100% {background-position: 0% 50%;}
+}
+
+
+
+#Slider #Portafolio #jobs .atras_tarjetas p{
+	width:100%;
+	padding:0px;
+	margin:0px;
+	position:relative;
+	top:15px;
+	display:inline-block;
+	color:white;
+	font-size:1.3em;
+	/*background:blue;*/
+	/*opacity:0.5;*/
+}
+
+#Slider #Portafolio #jobs .tarjeta-wrap:hover .tarjetas{
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+
+/*degradado por categoria volantes*/
+
+#Slider #Portafolio #jobs .volantes{
+	width: 200px;
+	height:320px;
+	position: relative;
+	/*background:linear-gradient(132deg,blue,green);*/
+	background:#f98866;
+	/*animation:volantesuno 30s ease infinite;*/
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: .7s ease;
+	-moz-transition: .7s ease;
+	transition: .7s ease;
+	-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	-moz-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+}
+/*
+@keyframes volantesuno{
+	0%{background-position: 0% 50%;}
+	50%{background-position:100% 50%;}
+	100%{background-position: 0% 50%;}
+}
+*/
+
+
+#Slider #Portafolio #jobs .adelante_volantes, .atras_volantes{
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	top:0;
+	left:0;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+#Slider #Portafolio #jobs .adelante_volantes img{
+	width: 100%;
+	height:85%;
+}
+
+#Slider #Portafolio #jobs .adelante_volantes  span{
+	position:relative;
+	top:1px;
+	color:white;
+	text-shadow: 2px 2px 4px #000000;
+	font-weight:bold;
+}
+
+#Slider #Portafolio #jobs .atras_volantes {
+    width: 100%;
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+    position:relative;
+	padding:0px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	
+	display: -moz-box;
+	display: -moz-flex;
+	
+	display: flex;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-align:left;
+	color: #fff;
+	font-family: "open sans";
+	background: linear-gradient(132deg,#ff420e,#80bd9e,#89da59);
+	-webkit-animation: volantesdos 10s ease infinite;
+	-moz-animation: volantesdos 10s ease infinite;
+	background-size: 400% 400%;
+	display:inline-block;
+
+}
+
+@keyframes volantesdos{
+	0% {background-position: 0% 25%;}
+	25% {background-position: 25% 50%;}
+	50% {background-position: 50% 100%;}
+	100% {background-position: 0% 50%;}
+}
+
+
+
+#Slider #Portafolio #jobs .atras_volantes p{
+	width:100%;
+	padding:0px;
+	margin:0px;
+	position:relative;
+	top:15px;
+	display:inline-block;
+	color:black;
+	font-size:1.3em;
+	/*background:blue;*/
+	/*opacity:0.5;*/
+}
+
+#Slider #Portafolio #jobs .tarjeta-wrap:hover .volantes{
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+
+/*degradado por categoria Dipticos y Tripticos*/
+#Slider #Portafolio #jobs .Dip_Trip{
+	width: 200px;
+	height:320px;
+	position: relative;
+	/*background:linear-gradient(132deg,red,yellow);
+	animation:Dip_Tripsuno 30s ease infinite;*/
+	background:#46211a;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: .7s ease;
+	-moz-transition: .7s ease;
+	transition: .7s ease;
+	-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	-moz-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+}
+/*
+@keyframes Dip_Tripuno{
+	0%{background-position: 0% 50%;}
+	50%{background-position:100% 50%;}
+	100%{background-position: 0% 50%;}
+}
+
+*/
+
+
+#Slider #Portafolio #jobs .adelante_Dip_Trip, .atras_Dip_Trip{
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	top:0;
+	left:0;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+#Slider #Portafolio #jobs .adelante_Dip_Trip img{
+	width: 100%;
+	height:85%;
+}
+
+#Slider #Portafolio #jobs .adelante_Dip_Trip  span{
+	position:relative;
+	top:1px;
+	color:white;
+	text-shadow: 2px 2px 4px #000000;
+	font-weight:bold;
+}
+
+#Slider #Portafolio #jobs .atras_Dip_Trip {
+    width: 100%;
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+    position:relative;
+	padding:0px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	
+	display: -moz-box;
+	display: -moz-flex;
+	
+	display: flex;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-align:left;
+	color: #fff;
+	font-family: "open sans";
+	background: linear-gradient(132deg,#693d3d,#ba5536,#a43820);
+	-webkit-animation: Dip_Tripdos 10s ease infinite;
+	-moz-animation: Dip_Tripdos 10s ease infinite;
+	background-size: 400% 400%;
+	display:inline-block;
+
+}
+
+@keyframes Dip_Tripdos{
+	0% {background-position: 0% 25%;}
+	25% {background-position: 25% 50%;}
+	50% {background-position: 50% 100%;}
+	100% {background-position: 0% 50%;}
+}
+
+
+
+#Slider #Portafolio #jobs .atras_Dip_Trip p{
+	width:100%;
+	padding:0px;
+	margin:0px;
+	position:relative;
+	top:15px;
+	display:inline-block;
+	color:white;
+	font-size:1.3em;
+	/*background:blue;*/
+	/*opacity:0.5;*/
+}
+
+#Slider #Portafolio #jobs .tarjeta-wrap:hover .Dip_Trip{
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+/*degradado por categoria Posters*/
+
+#Slider #Portafolio #jobs .Posters{
+	width: 200px;
+	height:320px;
+	position: relative;
+	/*background:linear-gradient(132deg,#2CA7E6,#D6E62C);
+	animation:Postersuno 30s ease infinite;*/
+	background:#505160;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: .7s ease;
+	-moz-transition: .7s ease;
+	transition: .7s ease;
+	-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	-moz-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+}
+/*
+@keyframes Postersuno{
+	0%{background-position: 0% 50%;}
+	50%{background-position:100% 50%;}
+	100%{background-position: 0% 50%;}
+}
+*/
+
+
+
+#Slider #Portafolio #jobs .adelante_Posters, .atras_Posters{
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	top:0;
+	left:0;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+#Slider #Portafolio #jobs .adelante_Posters img{
+	width: 100%;
+	height:85%;
+}
+
+#Slider #Portafolio #jobs .adelante_Posters  span{
+	position:relative;
+	top:1px;
+	color:white;
+	text-shadow: 2px 2px 4px #000000;
+	font-weight:bold;
+}
+
+#Slider #Portafolio #jobs .atras_Posters {
+    width: 100%;
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+    position:relative;
+	padding:0px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	
+	display: -moz-box;
+	display: -moz-flex;
+	
+	display: flex;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-align:left;
+	color: #fff;
+	font-family: "open sans";
+	background: linear-gradient(132deg,#aebd38,#68829e,#598234);
+	-webkit-animation:Postersdos 10s ease infinite;
+	-moz-animation:Postersdos 10s ease infinite;
+	background-size: 400% 400%;
+	display:inline-block;
+
+}
+
+@keyframes Postersdos{
+	0% {background-position: 0% 25%;}
+	25% {background-position: 25% 50%;}
+	50% {background-position: 50% 100%;}
+	100% {background-position: 0% 50%;}
+}
+
+
+#Slider #Portafolio #jobs .atras_Posters p{
+	width:100%;
+	padding:0px;
+	margin:0px;
+	position:relative;
+	top:15px;
+	display:inline-block;
+	color:white;
+	font-size:1.3em;
+	/*background:blue;*/
+	/*opacity:0.5;*/
+}
+
+#Slider #Portafolio #jobs .tarjeta-wrap:hover .Posters{
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+
+/*degradado por categoria notas*/
+
+#Slider #Portafolio #jobs .nota{
+	width: 200px;
+	height:320px;
+	position: relative;
+	/*background:linear-gradient(132deg,#2CA7E6,#D6E62C);
+	animation:Postersuno 30s ease infinite;*/
+	background:#66a5ad;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: .7s ease;
+	-moz-transition: .7s ease;
+	transition: .7s ease;
+	-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	-moz-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+}
+/*
+@keyframes Postersuno{
+	0%{background-position: 0% 50%;}
+	50%{background-position:100% 50%;}
+	100%{background-position: 0% 50%;}
+}
+*/
+
+
+#Slider #Portafolio #jobs .adelante_nota, .atras_nota{
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	top:0;
+	left:0;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+#Slider #Portafolio #jobs .adelante_nota img{
+	width: 100%;
+	height:85%;
+}
+
+#Slider #Portafolio #jobs .adelante_nota  span{
+	position:relative;
+	top:1px;
+	color:white;
+	text-shadow: 2px 2px 4px #000000;
+	font-weight:bold;
+}
+
+#Slider #Portafolio #jobs .atras_nota {
+    width: 100%;
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+    position:relative;
+	padding:0px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	
+	display: -moz-box;
+	display: -moz-flex;
+	
+	display: flex;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-align:left;
+	color: #fff;
+	font-family: "open sans";
+	background: linear-gradient(132deg,#003b46,#c4dfe6,#07575b);
+	-webkit-animation:notados 10s ease infinite;
+	-moz-animation:notados 10s ease infinite;
+	background-size: 400% 400%;
+	display:inline-block;
+
+}
+
+@keyframes notados{
+	0% {background-position: 0% 25%;}
+	25% {background-position: 25% 50%;}
+	50% {background-position: 50% 100%;}
+	100% {background-position: 0% 50%;}
+}
+
+
+
+#Slider #Portafolio #jobs .atras_nota p{
+	width:100%;
+	padding:0px;
+	margin:0px;
+	position:relative;
+	top:15px;
+	display:inline-block;
+	color:black;
+	font-size:1.3em;
+	/*background:blue;*/
+	/*opacity:0.5;*/
+}
+
+#Slider #Portafolio #jobs .tarjeta-wrap:hover .nota{
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+
+
+/* degradaddo de mas_papeleria*/
+
+#Slider #Portafolio #jobs .mas_papeleria{
+	width: 200px;
+	height:320px;
+	position: relative;
+	/*background:linear-gradient(132deg,#2CA7E6,#D6E62C);
+	animation:Postersuno 30s ease infinite;*/
+	background:#2e4600;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: .7s ease;
+	-moz-transition: .7s ease;
+	transition: .7s ease;
+	-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	-moz-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+}
+/*
+@keyframes Postersuno{
+	0%{background-position: 0% 50%;}
+	50%{background-position:100% 50%;}
+	100%{background-position: 0% 50%;}
+}
+*/
+
+
+#Slider #Portafolio #jobs .adelantemas_papeleria, .atrasmas_papeleria{
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	top:0;
+	left:0;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+#Slider #Portafolio #jobs .adelantemas_papeleria img{
+	width: 100%;
+	height:85%;
+}
+
+#Slider #Portafolio #jobs .adelantemas_papeleria  span{
+	position:relative;
+	top:1px;
+	color:white;
+	text-shadow: 2px 2px 4px #000000;
+	font-weight:bold;
+}
+
+#Slider #Portafolio #jobs .atrasmas_papeleria {
+    width: 100%;
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+    position:relative;
+	padding:0px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	
+	display: -moz-box;
+	display: -moz-flex;
+	
+	display: flex;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-align:left;
+	color: #fff;
+	font-family: "open sans";
+	background: linear-gradient(132deg,#a2c523,#7d4427,#486b00);
+	-webkit-animation:mas_papeleriados 10s ease infinite;
+	-moz-animation:notados 10s ease infinite;
+	background-size: 400% 400%;
+	display:inline-block;
+
+}
+
+@keyframes mas_papeleriados{
+	0% {background-position: 0% 25%;}
+	25% {background-position: 25% 50%;}
+	50% {background-position: 50% 100%;}
+	100% {background-position: 0% 50%;}
+}
+
+
+
+#Slider #Portafolio #jobs .atrasmas_papeleria p{
+	width:100%;
+	padding:0px;
+	margin:0px;
+	position:relative;
+	top:15px;
+	display:inline-block;
+	color:white;
+	font-size:1.3em;
+	/*background:blue;*/
+	/*opacity:0.5;*/
+}
+
+#Slider #Portafolio #jobs .tarjeta-wrap:hover .mas_papeleria{
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+/*Degradado T_blanca*/
+#Slider #Portafolio #jobs .T_blanca{
+	width: 200px;
+	height:320px;
+	position: relative;
+	/*background:linear-gradient(132deg,#2CA7E6,#D6E62C);
+	animation:Postersuno 30s ease infinite;*/
+	background:#004445;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: .7s ease;
+	-moz-transition: .7s ease;
+	transition: .7s ease;
+	-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	-moz-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+}
+/*
+@keyframes Postersuno{
+	0%{background-position: 0% 50%;}
+	50%{background-position:100% 50%;}
+	100%{background-position: 0% 50%;}
+}
+*/
+
+
+#Slider #Portafolio #jobs .adelante_T_blanca, .atras_T_blanca{
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	top:0;
+	left:0;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+#Slider #Portafolio #jobs .adelante_T_blanca img{
+	width: 100%;
+	height:85%;
+}
+
+#Slider #Portafolio #jobs .adelante_T_blanca  span{
+	position:relative;
+	top:1px;
+	color:white;
+	text-shadow: 2px 2px 4px #000000;
+	font-weight:bold;
+}
+
+#Slider #Portafolio #jobs .atras_T_blanca {
+    width: 100%;
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+    position:relative;
+	padding:0px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	
+	display: -moz-box;
+	display: -moz-flex;
+	
+	display: flex;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-align:left;
+	color: #fff;
+	font-family: "open sans";
+	background: linear-gradient(132deg,#021c1e,#2c7873,#6fb98f);
+	-webkit-animation:T_blancados 10s ease infinite;
+	-moz-animation:T_blancados 10s ease infinite;
+	background-size: 400% 400%;
+	display:inline-block;
+
+}
+
+@keyframes T_blancados{
+	0% {background-position: 0% 25%;}
+	25% {background-position: 25% 50%;}
+	50% {background-position: 50% 100%;}
+	100% {background-position: 0% 50%;}
+}
+
+
+
+#Slider #Portafolio #jobs .atras_T_blanca p{
+	width:100%;
+	padding:0px;
+	margin:0px;
+	position:relative;
+	top:15px;
+	display:inline-block;
+	color:white;
+	font-size:1.3em;
+	/*background:blue;*/
+	/*opacity:0.5;*/
+}
+
+#Slider #Portafolio #jobs .tarjeta-wrap:hover .T_blanca{
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+/*cred_pvc*/
+#Slider #Portafolio #jobs .cred_pvc{
+	width: 200px;
+	height:320px;
+	position: relative;
+	/*background:linear-gradient(132deg,#2CA7E6,#D6E62C);
+	animation:Postersuno 30s ease infinite;*/
+	background:#ffbb00;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: .7s ease;
+	-moz-transition: .7s ease;
+	transition: .7s ease;
+	-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	-moz-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+}
+/*
+@keyframes Postersuno{
+	0%{background-position: 0% 50%;}
+	50%{background-position:100% 50%;}
+	100%{background-position: 0% 50%;}
+}
+*/
+
+
+#Slider #Portafolio #jobs .adelante_cred_pvc, .atras_cred_pvc{
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	top:0;
+	left:0;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+#Slider #Portafolio #jobs .adelante_cred_pvc img{
+	width: 100%;
+	height:85%;
+}
+
+#Slider #Portafolio #jobs .adelante_cred_pvc  span{
+	position:relative;
+	top:1px;
+	color:white;
+	text-shadow: 2px 2px 4px #000000;
+	font-weight:bold;
+}
+
+#Slider #Portafolio #jobs .atras_cred_pvc {
+    width: 100%;
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+    position:relative;
+	padding:0px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	
+	display: -moz-box;
+	display: -moz-flex;
+	
+	display: flex;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-align:left;
+	color: #fff;
+	font-family: "open sans";
+	background: linear-gradient(132deg,#375e97,#fb6542,#3f681c);
+	-webkit-animation:cred_pvcdos 10s ease infinite;
+	-moz-animation:cred_pvcdos 10s ease infinite;
+	background-size: 400% 400%;
+	display:inline-block;
+
+}
+
+@keyframes cred_pvcdos{
+	0% {background-position: 0% 25%;}
+	25% {background-position: 25% 50%;}
+	50% {background-position: 50% 100%;}
+	100% {background-position: 0% 50%;}
+}
+
+
+
+#Slider #Portafolio #jobs .atras_cred_pvc p{
+	width:100%;
+	padding:0px;
+	margin:0px;
+	position:relative;
+	top:15px;
+	display:inline-block;
+	color:black;
+	font-size:1.3em;
+	/*background:blue;*/
+	/*opacity:0.5;*/
+}
+
+#Slider #Portafolio #jobs .tarjeta-wrap:hover .cred_pvc{
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+/*Degradado Lona_13onzas*/
+#Slider #Portafolio #jobs .Lona_13onzas{
+	width: 200px;
+	height:320px;
+	position: relative;
+	/*background:linear-gradient(132deg,#2CA7E6,#D6E62C);
+	animation:Postersuno 30s ease infinite;*/
+	background:#98dbc6;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: .7s ease;
+	-moz-transition: .7s ease;
+	transition: .7s ease;
+	-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	-moz-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+}
+/*
+@keyframes Postersuno{
+	0%{background-position: 0% 50%;}
+	50%{background-position:100% 50%;}
+	100%{background-position: 0% 50%;}
+}
+*/
+
+
+#Slider #Portafolio #jobs .adelante_Lona_13onzas, .atras_Lona_13onzas{
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	top:0;
+	left:0;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+#Slider #Portafolio #jobs .adelante_Lona_13onzas img{
+	width: 100%;
+	height:85%;
+}
+
+#Slider #Portafolio #jobs .adelante_Lona_13onzas  span{
+	position:relative;
+	top:1px;
+	color:white;
+	text-shadow: 2px 2px 4px #000000;
+	font-weight:bold;
+
+}
+
+#Slider #Portafolio #jobs .atras_Lona_13onzas {
+    width: 100%;
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+    position:relative;
+	padding:0px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	
+	display: -moz-box;
+	display: -moz-flex;
+	
+	display: flex;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-align:left;
+	color: #fff;
+	font-family: "open sans";
+	background: linear-gradient(132deg,#e6d72a,#cb0000,#5bc8ac);
+	-webkit-animation:Lona_treceonzasdos 10s ease infinite;
+	-moz-animation:Lona_treceonzasdos 10s ease infinite;
+	background-size: 400% 400%;
+	display:inline-block;
+
+}
+
+@keyframes Lona_treceonzasdos{
+	0% {background-position: 0% 25%;}
+	25% {background-position: 25% 50%;}
+	50% {background-position: 50% 100%;}
+	100% {background-position: 0% 50%;}
+}
+
+
+
+#Slider #Portafolio #jobs .atras_Lona_13onzas p{
+	width:100%;
+	padding:0px;
+	margin:0px;
+	position:relative;
+	top:15px;
+	display:inline-block;
+	color:white;
+	font-size:1.3em;
+	/*background:blue;*/
+	/*opacity:0.5;*/
+}
+
+#Slider #Portafolio #jobs .tarjeta-wrap:hover .Lona_13onzas{
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+/*fin de carjeta wrap*/
+/*
+#Slider #Portafolio #jobs article figure{
+	margin: 0px;
+	width: 130px;
+	height: 150px;
+	margin-top: 75px;
+	overflow: hidden;
+	position: relative;
+	transition-duration: 0.5s;
+	width: 100%;
+}
+#Slider #Portafolio #jobs article figure img{
+	margin: 0px;
+	margin-left: -17px;
+	margin-top: -40px;
+	transform: scale(1.9);
+}
+#Slider #Portafolio #jobs div figure:hover{
+	transform: rotateY(90deg);
+	opacity: 0;
+}
+
+#Slider #Portafolio #jobs figure .atras{
+	top:-145px;
+	transform: rotateY(0deg);
+	opacity:1;
+}
+
+#Slider #Portafolio #jobs div figure img{
+	margin: 0px;
+	margin-left: -17px;
+	margin-top: -40px;
+	transform: scale(1.9);
+}
+
+#Slider #Portafolio #jobs div figure figcaption{
+	position: relative;
+	top: -145px;
+	color:black;
+	text-decoration: none;
+	font-size: 1.3em;
+}
+#Slider #Portafolio #jobs div figure span{
+	display: block;
+	text-decoration: none;
+	color: #BFBDBD;
+}
+
+*/
+/*******************************************
+********************************************
+*********SECCIÖN DE PAGINA DE Concacto******
+********************************************
+********************************************/
+
+
+#Slider #Concacto{
+	height:auto; 
+	background:#395B81;
+	font-family:'arial';
+	position:absolute;
+	text-align: center;
+	padding-bottom:200px;
+
+}
+
+#Slider #Concacto  #span_contactanos{
+	position:relative;
+    top:110px;
+	margin-left:10vw;
+	margin-right:10vw;
+	/*background:cyan;*/
+	font-size:2.8em;
+
+}
+
+/*--------------------------------------------FACEBOOK-------------------------------------*/
+
+#Slider #Concacto .cuerpo_contacto_facebook{
+	top:140px;
+	position:relative;
+	margin-left:20vw;
+	margin-right:20vw;
+	/*background:red;*/
+	height:auto; 
+
+	
+
+}
+
+#Slider #Concacto .cuerpo_contacto_facebook .iconos_contacto_linkeados_facebook
+{
+	top:140px;
+	padding-top:10px;
+	padding-bottom:50px;
+	margin-top:70px;
+	width:100%;
+	height:auto; 
+	background:#5D636A;
+	border-radius:25%;
+	border: 9px double;
+    border-color: #3b5999;
+
+
+}
+
+#Slider #Concacto .cuerpo_contacto_facebook .iconos_contacto_linkeados_facebook #c_facebook
+{
+    color:white;
+	width:100px;
+	height:100px;
+	/*background:blue;*/
+	display:block;
+	position:relative;
+	top:0%;
+	left:50%;
+	transform:translateX(-50%);
+	margin-top:20px;
+	
+
+}
+
+
+
+/*pone el caracter de facebook*/
+#Slider #Concacto .cuerpo_contacto_facebook .iconos_contacto_linkeados_facebook  #c_facebook:nth-child(1):after{
+	text-decoration:none;
+	position:absolute;
+	font-size:100px;
+	top:-8px;
+	left:50%;
+	transform:translateX(-50%);
+	font-family:'icomoon';
+	content:'\e900';
+}
+
+/*animación del hover facebook*/
+
+#Slider #Concacto .cuerpo_contacto_facebook .iconos_contacto_linkeados_facebook #c_facebook:nth-child(1):hover{
+	
+	content:'\e900';
+	color:#3b5999;
+}
+
+#Slider #Concacto .cuerpo_contacto_facebook .iconos_contacto_linkeados_facebook #c_facebook_texto{
+   position:relative;
+   top:10px;
+   width:100%;
+   height:25px;
+   /*background:white;*/
+   color:black;
+   font-size:25px;
+}
+
+#Slider #Concacto .cuerpo_contacto_facebook .iconos_contacto_linkeados_facebook #c_facebook_texto_link a{
+   position:relative;
+   top:20px;
+   text-decoration:none;
+   width:100%;
+   height:auto;
+   background:none;
+    /*background:red;
+   opacity:0.5;*/
+   color:black;
+   font-size:25px;
+   margin-bottom:10px;
+}
+
+/*--------------------------------------------FACEBOOK-------------------------------------*/
+
+/*----------------------------------------------YAHOO--------------------------------------*/
+
+#Slider #Concacto .cuerpo_contacto_yahoo{
+	top:140px;
+	position:relative;
+	margin-left:20vw;
+	margin-right:20vw;
+	/*background:red;*/
+	height:auto; 
+
+	
+
+}
+
+#Slider #Concacto .cuerpo_contacto_yahoo .iconos_contacto_linkeados_yahoo
+{
+	top:140px;
+	padding-top:10px;
+	padding-bottom:50px;
+	margin-top:70px;
+	width:100%;
+	height:auto; 
+	background:#5D636A;
+	border-radius:25%;
+	border: 9px double;
+    border-color: #410093;
+}
+
+#Slider #Concacto .cuerpo_contacto_yahoo .iconos_contacto_linkeados_yahoo #c_yahoo
+{
+    color:white;
+	width:100px;
+	height:100px;
+	/*background:blue;*/
+	display:block;
+	position:relative;
+	top:0%;
+	left:50%;
+	transform:translateX(-50%);
+	margin-top:20px;
+	
+
+}
+
+
+
+/*pone el caracter de yahoo*/
+#Slider #Concacto .cuerpo_contacto_yahoo .iconos_contacto_linkeados_yahoo #c_yahoo:nth-child(1):after{
+	text-decoration:none;
+	position:absolute;
+	font-size:100px;
+	top:-8px;
+	left:50%;
+	transform:translateX(-50%);
+	font-family:'icomoon';
+	content:'\eabc';
+}
+
+/*animación del hover yahoo*/
+
+#Slider #Concacto .cuerpo_contacto_yahoo .iconos_contacto_linkeados_yahoo #c_yahoo:nth-child(1):hover{
+	
+	content:'\eabc';
+	color:#410093;
+}
+
+#Slider #Concacto .cuerpo_contacto_yahoo .iconos_contacto_linkeados_yahoo #c_yahoo_texto{
+   position:relative;
+   top:10px;
+   width:100%;
+   height:25px;
+   /*background:white;*/
+   color:black;
+   font-size:25px;
+}
+
+#Slider #Concacto .cuerpo_contacto_yahoo .iconos_contacto_linkeados_yahoo #c_yahoo_texto_link a{
+    position:relative;
+   top:20px;
+   text-decoration:none;
+   width:100%;
+   height:auto;
+   background:none;
+   /*background:red;
+   opacity:0.5;*/
+   color:black;
+   display:block;
+   font-size:.8em;
+   margin-bottom:10px;
+}
+
+/*----------------------------------------------YAHOO--------------------------------------*/
+
+/*----------------------------------------------GMAIL--------------------------------------*/
+
+#Slider #Concacto .cuerpo_contacto_gmail{
+	top:140px;
+	position:relative;
+	margin-left:20vw;
+	margin-right:20vw;
+	/*background:red;*/
+	height:auto; 
+
+	
+
+}
+
+#Slider #Concacto .cuerpo_contacto_gmail .iconos_contacto_linkeados_gmail
+{
+	top:140px;
+	padding-top:10px;
+	padding-bottom:50px;
+	margin-top:70px;
+	width:100%;
+	height:auto; 
+	background:#5D636A;
+	border-radius:25%;
+	border: 9px double;
+    border-color: #dd4b39;
+}
+
+#Slider #Concacto .cuerpo_contacto_gmail .iconos_contacto_linkeados_gmail #c_gmail
+{
+    color:white;
+	width:100px;
+	height:100px;
+	/*background:blue;*/
+	display:block;
+	position:relative;
+	top:0%;
+	left:50%;
+	transform:translateX(-50%);
+	margin-top:20px;
+	
+
+}
+
+
+
+/*pone el caracter de gmail*/
+#Slider #Concacto .cuerpo_contacto_gmail .iconos_contacto_linkeados_gmail #c_gmail:nth-child(1):after{
+	text-decoration:none;
+	position:absolute;
+	font-size:100px;
+	top:-8px;
+	left:50%;
+	transform:translateX(-50%);
+	font-family:'icomoon';
+	content:'\e906';
+}
+
+/*animación del hover gmail*/
+
+#Slider #Concacto .cuerpo_contacto_gmail .iconos_contacto_linkeados_gmail #c_gmail:nth-child(1):hover{
+	
+	content:'\e906';
+	color:#dd4b39;
+}
+
+#Slider #Concacto .cuerpo_contacto_gmail .iconos_contacto_linkeados_gmail #c_gmail_texto{
+   position:relative;
+   top:10px;
+   width:100%;
+   height:25px;
+   /*background:white;*/
+   color:black;
+   font-size:25px;
+}
+
+#Slider #Concacto .cuerpo_contacto_gmail .iconos_contacto_linkeados_gmail #c_gmail_texto_link a{
+   position:relative;
+   top:20px;
+   text-decoration:none;
+   width:100%;
+   height:auto;
+   background:none;
+    /*background:red;
+   opacity:0.5;*/
+   color:black;
+   font-size:.8em;
+   margin-bottom:10px;
+}
+
+/*----------------------------------------------GMAIL--------------------------------------*/
+
+
+/*--------------------------------------------WhatsApp-------------------------------------*/
+#Slider #Concacto .cuerpo_contacto_whatsapp{
+	top:140px;
+	position:relative;
+	margin-left:20vw;
+	margin-right:20vw;
+	/*background:red;*/
+	height:auto; 
+
+	
+
+}
+
+#Slider #Concacto .cuerpo_contacto_whatsapp .iconos_contacto_NO_linkeados_whatsapp
+{
+	top:140px;
+	padding-top:10px;
+	padding-bottom:50px;
+	margin-top:70px;
+	width:100%;
+	height:auto; 
+	background:#5D636A;
+	border-radius:25%;
+	border: 9px double;
+    border-color: #25D366;
+}
+
+#Slider #Concacto .cuerpo_contacto_whatsapp .iconos_contacto_NO_linkeados_whatsapp #c_whatsapp
+{
+    color:white;
+	width:100px;
+	height:100px;
+	/*background:blue;*/
+	display:block;
+	position:relative;
+	top:0%;
+	left:50%;
+	transform:translateX(-50%);
+	margin-top:20px;
+	
+
+}
+
+
+
+/*pone el caracter de WhatsApp*/
+#Slider #Concacto .cuerpo_contacto_whatsapp .iconos_contacto_NO_linkeados_whatsapp #c_whatsapp:nth-child(1):after{
+	text-decoration:none;
+	position:absolute;
+	font-size:100px;
+	top:-8px;
+	left:50%;
+	transform:translateX(-50%);
+	font-family:'icomoon';
+	content:'\ea93';
+}
+
+/*animación del hover whatsApp*/
+
+#Slider #Concacto .cuerpo_contacto_whatsapp .iconos_contacto_NO_linkeados_whatsapp #c_whatsapp:nth-child(1):hover{
+	
+	content:'\ea93';
+	color:#25D366;
+}
+
+#Slider #Concacto .cuerpo_contacto_whatsapp .iconos_contacto_NO_linkeados_whatsapp  #c_whatsapp_texto{
+   position:relative;
+   top:10px;
+   width:100%;
+   height:25px;
+   /*background:white;*/
+   color:black;
+   font-size:25px;
+}
+
+#Slider #Concacto .cuerpo_contacto_whatsapp .iconos_contacto_NO_linkeados_whatsapp  #c_whatsapp_texto_link a {
+   position:relative;
+   top:20px;
+   text-decoration:none;
+   width:100%;
+   height:auto;
+   background:none;
+    /*background:red;
+   opacity:0.5;*/
+   color:black;
+   font-size:25px;
+   margin-bottom:10px;
+}
+
+/*--------------------------------------------WhatsApp-------------------------------------*/
+
+/*--------------------------------------------Telefono-------------------------------------*/
+
+#Slider #Concacto .cuerpo_contacto_telefono{
+	top:140px;
+	position:relative;
+	margin-left:20vw;
+	margin-right:20vw;
+	/*background:red;*/
+	height:auto; 
+
+	
+
+}
+
+#Slider #Concacto .cuerpo_contacto_telefono .iconos_contacto_NO_linkeados_telefono
+{
+	top:140px;
+	padding-top:10px;
+	padding-bottom:50px;
+	margin-top:70px;
+	width:100%;
+	height:auto; 
+	background:#5D636A;
+	border-radius:25%;
+	border: 9px double;
+    border-color: #00AFF0;
+}
+
+#Slider #Concacto .cuerpo_contacto_telefono .iconos_contacto_NO_linkeados_telefono #c_telefono
+{
+    color:white;
+	width:100px;
+	height:100px;
+	/*background:blue;*/
+	display:block;
+	position:relative;
+	top:0%;
+	left:50%;
+	transform:translateX(-50%);
+	margin-top:20px;
+	
+
+}
+
+
+
+/*pone el caracter de telefono*/
+#Slider #Concacto .cuerpo_contacto_telefono .iconos_contacto_NO_linkeados_telefono #c_telefono:nth-child(1):after{
+	text-decoration:none;
+	position:absolute;
+	font-size:100px;
+	top:-8px;
+	left:50%;
+	transform:translateX(-50%);
+	font-family:'icomoon';
+	content:'\e942';
+}
+
+/*animación del hover telefono*/
+
+#Slider #Concacto .cuerpo_contacto_telefono .iconos_contacto_NO_linkeados_telefono #c_telefono:nth-child(1):hover{
+	
+	content:'\e942';
+	color:#00AFF0;
+}
+
+#Slider #Concacto .cuerpo_contacto_telefono .iconos_contacto_NO_linkeados_telefono #c_telefono_texto{
+   position:relative;
+   top:10px;
+   width:100%;
+   height:25px;
+   /*background:white;*/
+   color:black;
+   font-size:25px;
+}
+
+#Slider #Concacto .cuerpo_contacto_telefono .iconos_contacto_NO_linkeados_telefono  #c_telefono_texto_link a{
+   position:relative;
+   top:20px;
+   text-decoration:none;
+   width:100%;
+   height:auto;
+   background:none;
+    /*background:red;
+   opacity:0.5;*/
+   color:black;
+   font-size:25px;
+   margin-bottom:10px;
+   font-weight:bold;
+}
+
+
+
+/*--------------------------------------------Telefono-------------------------------------*/
+
+
+
+/*animación del hover telefono*/
+
+
+/*********************************
+*                                *
+********Aspecto Formularior*******
+*                                *
+**********************************/
+/*
+ #boton_email{
+ width: 60px;
+ height:60px;
+ background:red;
+ color:white;
+ z-index:80;
+ right:5px;
+ position:fixed;
+ top:25vh;
+ display:block;
+
+}
+*/
+
+#formulario_contacto{
+	position:fixed;
+	left:-251px;/*-301*/
+	top:80px;
+	background:#fff;
+	border:1px solid green;
+	width:250px;
+	border-top:1px solid black;
+	/*box-shadow: 50px 0px 0px 10px rgba(0,0,0,.5);*/
+	font-family:'arial';
+	 z-index:999;
+	 display:block;
+	 transition:0.5s;
+
+}
+
+#formulario_contacto.active{
+  left:0px;
+}
+
+
+
+#formulario_contacto #cerrar_formulario{
+	position:absolute;
+	width:40px;
+	height:40px;
+	right:0%;
+	transform:translateX(41px);
+	z-index:999;
+	top:0%;
+	background:red;
+
+}
+
+
+
+#formulario_contacto #cerrar_formulario:hover{
+	cursor:pointer;
+
+}
+
+#formulario_contacto #cerrar_formulario:before{
+	font-family:'icomoon';
+	content:"\ea84";
+	font-size:20px;
+	text-align:center;
+	top:10px;
+	left:10px;
+	position:relative;
+	color:#fff;
+
+}
+
+#formulario_contacto #cerrar_formulario.active:before{
+	font-family:'icomoon';
+	content:"\ea0f";
+	font-size:20px;
+	text-align:center;
+	top:10px;
+	left:10px;
+	position:relative;
+	color:#000000;
+
+}
+
+#formulario_contacto figure{
+	top:5px;
+	height:70px;
+	width:100%;
+	margin:0px;
+	padding:0px;
+	text-align:center;
+	background:#2963a4;
+
+}
+
+#formulario_contacto figure img{
+	position:relative;
+	bottom:5px;
+	top:5px;
+	height:80%;
+	margin:0px;
+
+}
+
+#formulario_contacto  #Enviar_tu_mensaje{
+
+    position:relative;
+    margin-left:20%;
+    margin-right:0%;
+	margin:20px;
+	width:90%;
+	margin-left:25%;
+}
+
+#formulario_contacto input,
+#formulario_contacto textarea{
+	display:block;
+	margin: 20px;
+	border:none;
+	border-bottom:2px solid gray;
+	width:90%;
+	margin-left:5%;
+	padding-bottom:3px;
+	margin-bottom:40px;
+	font-weight:bold;
+}
+
+#formulario_contacto textarea{
+	resize: none;
+	height:80px;
+}
+
+/*dodigo para estilo del boton*/
+#formulario_contacto #boton_enviar{
+	    background:#3E3E3E;
+      	color:#D4D4D4;
+      	cursor:pointer;
+}
+
+#formulario_contacto #boton_enviar:hover{
+	    background:red;
+      	color:black;
+}
+
+footer{
+	width:100%;
+	background:black;
+	color:#fff;
+	text-align:center;
+	z-index:90;
+	height:160px;
+	position:fixed;
+	bottom:-150px;/*;*/
+	transition-duration:0.4s;
+}
+/*animación footer*/
+footer:hover{
+	bottom:0px;
+
+}
+
+footer:after{
+    font-family:'icomoon';
+	content:'\e903';
+	position:absolute;
+	width: 80px;
+	height: 80px;
+	background:black;
+	color:black;
+	position: absolute;
+	border-radius: 50%;
+	font-size:6.4em;
+	left: 50%;
+	margin-left: -40px;
+	top: 0px;
+	margin-top:-30px;
+	text-shadow: 0px -30px 0px white;
+	transition-duration:0.4s;
+
+}
+
+footer:hover:after{
+	transform:rotate(180deg);
+	background:white;
+	color:white;
+
+	text-shadow: 0px -19px 0px black;
+
+}
+
+footer  span {
+	font-size:0.7em;
+	font-weight:lighter;
+	position:relative;
+	top:60px;
+	color:white;
+}
+footer #derechos{
+	color:white;
+}
+
+footer .redes_sociales{
+	
+	margin-top:70px;
+	width:100%;
+	height:40px;
+	background:none;
+	
+}
+
+footer .redes_sociales a{
+	color:white;
+	width:40px;
+	height:40px;
+	background:none;
+	display:inline-block;
+	position:relative;
+
+
+	
+}
+/*pone el caracter de facebook*/
+footer .redes_sociales  #facebook:nth-child(1):after{
+	
+	
+	text-decoration:none;
+	position:absolute;
+	font-size:2em;
+	top:2px;
+	left:5px;
+	font-family:'icomoon';
+	content:'\e900';
+}
+
+/*animación del hover facebook*/
+
+footer .redes_sociales #facebook:nth-child(1):hover{
+	
+	content:'\e900';
+	color:#3b5999;
+}
+
+footer .redes_sociales #facebook:nth-child(1):active{
+	
+	content:'\e900';
+	color:black;
+	background:#3b5999;
+}
+
+
+
+/*pone el caracter de twitter*/
+footer .redes_sociales  #twitter:nth-child(2):after{
+	
+	
+    text-decoration:none;
+	position:absolute;
+	font-size:2em;
+	top:2px;
+	left:5px;
+	font-family:'icomoon';
+	content:'\ea96';
+}
+
+/*animación del hover twitter*/
+
+footer .redes_sociales #twitter:nth-child(2):hover{
+	
+	content:'\e901';
+	color:#55acee;
+	
+}
+
+footer .redes_sociales #twitter:nth-child(2):active{
+	
+	content:'\e901';
+	color:black;
+	background:#55acee;
+}
+
+/*
+
+footer .redes_sociales  #instagram:nth-child(3):after{
+	
+	
+    text-decoration:none;
+	position:absolute;
+	font-size:2em;
+	top:2px;
+	left:5px;
+	font-family:'icomoon';
+	content:'\e902';
+}
+
+
+footer .redes_sociales #instagram:nth-child(3):hover{
+	
+	content:'\e902';
+	color:#e4405f;
+	
+}
+footer .redes_sociales #twitter:nth-child(3):active{
+	
+	content:'\e902';
+	color:black;
+	background:#e4405f;
+}
+*/
+/*@media (min-width: 668px) {
+footer .redes_sociales.whatsapp { display: none }
+}*/
+
+/*Pone el caracter whatsapp*/
+footer .redes_sociales  #whatsapp:nth-child(3):after{
+	
+	
+    text-decoration:none;
+	position:absolute;
+	font-size:2em;
+	top:2px;
+	left:5px;
+	font-family:'icomoon';
+	content:'\ea93';
+}
+
+/*caracter whatsapp*/
+
+footer .redes_sociales #whatsapp:nth-child(3):hover{
+	
+	content:'\ea93';
+	color:#25D366;
+	
+}
+/*animación del hover whatsapp*/
+footer .redes_sociales #whatsapp:nth-child(3):active{
+	
+	content:'\ea93';
+	color:black;
+	background:#25D366;
+}
+
+
+
+
+footer p{
+	font-size:0.7em;
+	font-weight:lighter;
+	font-family:'arial';
+	bottom:5px;
+
+}
+
+
+/**control de la versión de escritorio*/
+@media screen and (min-width:480px)
+/*error en conocenos*/
+/*error en contactanoss*/
+{
+/*Contendero de la barra de navegación*/
+		/*solucion descuadre del menu movil*/
+ header nav {
+
+      	display:inline-block;
+      	vertical-align:middle;
+      	width:auto;
+      	position:relative;
+      	/*background:red;*/
+      	transform: translate(10%);
+      	position:relative;
+      	left:0px;
+      	z-index:999;
+      	
+      	
+      }
+
+#Slider #Inicio{
+	height:85vh;
+	background:#395B81;
+	font-family:'arial';
+	position:absolute;
+	text-align: center;
+	padding-bottom:50px;
+
+}
+
+
+    #Slider #Inicio .logo_inicio{
+   	width:400px;
+   	left:50%;
+   	margin-left:-200px;
+   } 
+
+  
+   #Slider #Inicio .logo_inicio h2{
+   	font-size:2.5em;
+   } 
+
+   #Slider #Inicio .logo_inicio h3{
+	font-size:1.9em;
+	top:-50px;
+	
+   }
+
+
+   #Slider #Inicio .logo_inicio strong{
+	font-size:0.8em;
+	
+   }
+
+#Slider #Inicio .logo_inicio figure,
+#Slider #Inicio .logo_inicio figure img{
+	
+	
+}
+
+#Slider #Inicio .botones_inicio > *{
+	width: 200px;
+     
+
+}
+#Slider #Inicio .botones_inicio{
+     width:100%;
+     margin:0px;
+     background:none;
+     margin-top:0px;
+     top:-70px;
+    
+
+}
+
+#Slider #Inicio .botones_inicio a{
+	text-decoration:none;
+	color:white;
+	font-size:17px; 
+
+     
+
+}
+
+/*Aspecto Bonones Individuales*/
+#Slider #Inicio #contacta_me{
+	top:0px;
+	background:blue;
+	cursor: pointer;
+}
+
+
+
+#Slider #Inicio #conoce_mis_trabajos{
+	background: #F8931F;
+	cursor: pointer;
+}
+
+
+
+
+#Slider #Inicio .animación_inicio{
+	
+	background:none;
+	width:80%;
+	margin-left:10%;
+	height:480px;
+	min-height:400px;
+	position:absolute;
+}
+
+
+#Slider #Concacto{
+	height:auto;
+	background:#395B81;
+	font-family:'arial';
+	position:absolute;
+	text-align: center;
+	padding-bottom:300px;
+
+}
+
+
+#Slider #Concacto  #span_contactanos{
+	position:relative;
+    top:110px;
+	margin-left:20vw;
+	margin-right:20vw;
+	/*background:red;*/
+	font-size:2.8em;
+
+}
+
+/*--------------------------------------------FACEBOOK-------------------------------------*/
+
+#Slider #Concacto .cuerpo_contacto_facebook{
+	top:140px;
+	position:relative;
+	margin-left:10vw;
+	margin-right:10vw;
+	/*background:red;*/
+	height:auto; 
+
+	
+
+}
+
+#Slider #Concacto .cuerpo_contacto_facebook .iconos_contacto_linkeados_facebook
+{
+	top:140px;
+	padding-top:10px;
+	padding-bottom:50px;
+	margin-top:70px;
+	width:100%;
+	height:auto; 
+	background:#5D636A;
+	border-top-left-radius:2px;
+	border-bottom-right-radius:2px;
+	border-top-right-radius:2px;
+	border-bottom-left-radius:2px;
+	border-color:#FFBF00;
+    /*background:green;*/
+
+
+}
+
+
+
+#Slider #Concacto .cuerpo_contacto_facebook .iconos_contacto_linkeados_facebook #c_facebook
+{
+    color:white;
+	height:50%;
+	background:blue;
+	display:block;
+	position:relative;
+	left:20%;
+	margin-top:20px;
+	
+
+}
+
+
+
+/*pone el caracter de facebook*/
+#Slider #Concacto .cuerpo_contacto_facebook .iconos_contacto_linkeados_facebook  #c_facebook:nth-child(1):after{
+	text-decoration:none;
+	position:absolute;
+	font-size:5.5em;
+	left:50%;
+	transform:translateX(-50%);
+	font-family:'icomoon';
+	content:'\e900';
+}
+
+/*animación del hover facebook*/
+
+#Slider #Concacto .cuerpo_contacto_facebook .iconos_contacto_linkeados_facebook #c_facebook:nth-child(1):hover{
+	
+	content:'\e900';
+	color:#3b5999;
+}
+
+#Slider #Concacto .cuerpo_contacto_facebook .iconos_contacto_linkeados_facebook #c_facebook_texto{
+   position:relative;
+   width:100%;
+   height:25px;
+   left:10%;
+   top:-20%;
+   /*background:white;*/
+   color:black;
+   font-size:2.3em;
+}
+
+#Slider #Concacto .cuerpo_contacto_facebook .iconos_contacto_linkeados_facebook #c_facebook_texto_link a{
+   position:relative;
+   text-decoration:none;
+   width:100%;
+   height:auto;
+   left:11%;
+   background:none;
+    /*background:red;
+   opacity:0.5;*/
+   color:black;
+   font-size:1.9em;
+   margin-bottom:10px;
+}
+
+/*--------------------------------------------FACEBOOK-------------------------------------*/
+
+/*----------------------------------------------YAHOO--------------------------------------*/
+
+#Slider #Concacto .cuerpo_contacto_yahoo{
+	top:140px;
+	position:relative;
+	margin-left:10vw;
+	margin-right:10vw;
+	/*background:red;*/
+	height:auto; 
+
+	
+
+}
+
+#Slider #Concacto .cuerpo_contacto_yahoo .iconos_contacto_linkeados_yahoo
+{
+	top:140px;
+	padding-top:10px;
+	padding-bottom:50px;
+	margin-top:70px;
+	width:100%;
+	height:auto; 
+	background:#5D636A;
+	border-top-left-radius:2px;
+	border-bottom-right-radius:2px;
+	border-top-right-radius:2px;
+	border-bottom-left-radius:2px;
+	border-color:#FFBF00;
+}
+
+#Slider #Concacto .cuerpo_contacto_yahoo .iconos_contacto_linkeados_yahoo #c_yahoo
+{
+    color:white;
+	height:50%;
+	background:blue;
+	display:block;
+	position:relative;
+	left:20%;
+	margin-top:20px;
+	
+
+}
+
+
+
+/*pone el caracter de yahoo*/
+#Slider #Concacto .cuerpo_contacto_yahoo .iconos_contacto_linkeados_yahoo #c_yahoo:nth-child(1):after{
+	text-decoration:none;
+	position:absolute;
+	font-size:5.5em;
+	left:50%;
+	transform:translateX(-50%);
+	font-family:'icomoon';
+	content:'\eabc';
+}
+
+/*animación del hover yahoo*/
+
+#Slider #Concacto .cuerpo_contacto_yahoo .iconos_contacto_linkeados_yahoo #c_yahoo:nth-child(1):hover{
+	
+	content:'\eabc';
+	color:#410093;
+}
+
+#Slider #Concacto .cuerpo_contacto_yahoo .iconos_contacto_linkeados_yahoo #c_yahoo_texto{
+   position:relative;
+   width:100%;
+   height:25px;
+   left:10%;
+   top:-20%;
+   /*background:white;*/
+   color:black;
+   font-size:2.3em;
+}
+
+#Slider #Concacto .cuerpo_contacto_yahoo .iconos_contacto_linkeados_yahoo #c_yahoo_texto_link a{
+   position:relative;
+   text-decoration:none;
+   width:100%;
+   height:auto;
+   left:15%;
+   background:none;
+    /*background:red;
+   opacity:0.5;*/
+   color:black;
+   font-size:1.2em;
+   margin-bottom:10px;
+}
+
+/*----------------------------------------------YAHOO--------------------------------------*/
+
+/*----------------------------------------------GMAIL--------------------------------------*/
+
+#Slider #Concacto .cuerpo_contacto_gmail{
+	top:140px;
+	position:relative;
+	margin-left:10vw;
+	margin-right:10vw;
+	/*background:red;*/
+	height:auto; 
+
+	
+
+}
+
+#Slider #Concacto .cuerpo_contacto_gmail .iconos_contacto_linkeados_gmail
+{
+	top:140px;
+	padding-top:10px;
+	padding-bottom:50px;
+	margin-top:70px;
+	width:100%;
+	height:auto; 
+	background:#5D636A;
+	border-top-left-radius:2px;
+	border-bottom-right-radius:2px;
+	border-top-right-radius:2px;
+	border-bottom-left-radius:2px;
+	border-color:#FFBF00;
+}
+
+#Slider #Concacto .cuerpo_contacto_gmail .iconos_contacto_linkeados_gmail #c_gmail
+{
+     color:white;
+	height:50%;
+	background:blue;
+	display:block;
+	position:relative;
+	left:20%;
+	margin-top:20px;
+
+}
+
+
+
+/*pone el caracter de gmail*/
+#Slider #Concacto .cuerpo_contacto_gmail .iconos_contacto_linkeados_gmail #c_gmail:nth-child(1):after{
+	text-decoration:none;
+	position:absolute;
+	font-size:5.5em;
+	left:50%;
+	transform:translateX(-50%);
+	font-family:'icomoon';
+	content:'\e906';
+}
+
+/*animación del hover gmail*/
+
+#Slider #Concacto .cuerpo_contacto_gmail .iconos_contacto_linkeados_gmail #c_gmail:nth-child(1):hover{
+	
+	content:'\e906';
+	color:#dd4b39;
+}
+
+#Slider #Concacto .cuerpo_contacto_gmail .iconos_contacto_linkeados_gmail #c_gmail_texto{
+  position:relative;
+   width:100%;
+   height:25px;
+   left:10%;
+   top:-20%;
+   /*background:white;*/
+   color:black;
+   font-size:2.3em;
+}
+
+#Slider #Concacto .cuerpo_contacto_gmail .iconos_contacto_linkeados_gmail #c_gmail_texto_link a{
+   position:relative;
+   text-decoration:none;
+   width:100%;
+   height:auto;
+   left:15%;
+   background:none;
+    /*background:red;
+   opacity:0.5;*/
+   color:black;
+   font-size:1.2em;
+   margin-bottom:10px;
+}
+
+/*----------------------------------------------GMAIL--------------------------------------*/
+
+
+/*--------------------------------------------WhatsApp-------------------------------------*/
+#Slider #Concacto .cuerpo_contacto_whatsapp{
+	top:140px;
+	position:relative;
+	margin-left:20vw;
+	margin-right:20vw;
+	/*background:red;*/
+	height:auto; 
+
+	
+
+}
+
+#Slider #Concacto .cuerpo_contacto_whatsapp .iconos_contacto_NO_linkeados_whatsapp
+{
+	top:140px;
+	padding-top:10px;
+	padding-bottom:50px;
+	margin-top:70px;
+	width:100%;
+	height:auto; 
+	background:#5D636A;
+	border-top-left-radius:2px;
+	border-bottom-right-radius:2px;
+	border-top-right-radius:2px;
+	border-bottom-left-radius:2px;
+	border-color:#FFBF00;
+}
+
+#Slider #Concacto .cuerpo_contacto_whatsapp .iconos_contacto_NO_linkeados_whatsapp #c_whatsapp
+{
+    
+    color:white;
+	height:50%;
+	padding-bottom:0px;
+	margin-bottom:0px;
+	display:block;
+	position:relative;
+	left:20%;
+	margin-top:20px;
+	
+
+}
+
+
+
+/*pone el caracter de WhatsApp*/
+#Slider #Concacto .cuerpo_contacto_whatsapp .iconos_contacto_NO_linkeados_whatsapp #c_whatsapp:nth-child(1):after{
+	text-decoration:none;
+	position:absolute;
+	font-size:5.5em;
+	left:50%;
+	transform:translateX(-50%);
+	font-family:'icomoon';
+	content:'\ea93';
+}
+
+/*animación del hover whatsApp*/
+
+#Slider #Concacto .cuerpo_contacto_whatsapp .iconos_contacto_NO_linkeados_whatsapp #c_whatsapp:nth-child(1):hover{
+	
+	content:'\ea93';
+	color:#25D366;
+}
+
+#Slider #Concacto .cuerpo_contacto_whatsapp .iconos_contacto_NO_linkeados_whatsapp  #c_whatsapp_texto{
+   position:relative;
+   width:100%;
+   height:25px;
+   left:10%;
+   top:-20%;
+   /*background:white;*/
+   color:black;
+   font-size:2.3em;
+}
+
+#Slider #Concacto .cuerpo_contacto_whatsapp .iconos_contacto_NO_linkeados_whatsapp  #c_whatsapp_texto_link a {
+
+   position:relative;
+   text-decoration:none;
+   width:100%;
+   height:auto;
+   left:11%;
+   background:none;
+    /*background:red;
+   opacity:0.5;*/
+   color:black;
+   font-size:1.9em;
+   margin-bottom:10px;
+}
+
+/*--------------------------------------------WhatsApp-------------------------------------*/
+
+/*--------------------------------------------Telefono-------------------------------------*/
+
+#Slider #Concacto .cuerpo_contacto_telefono{
+	top:140px;
+	position:relative;
+	margin-left:20vw;
+	margin-right:20vw;
+	/*background:red;*/
+	height:auto; 
+
+	
+
+}
+
+#Slider #Concacto .cuerpo_contacto_telefono .iconos_contacto_NO_linkeados_telefono
+{   
+	top:140px;
+	padding-top:10px;
+	padding-bottom:50px;
+	margin-top:70px;
+	width:100%;
+	height:auto; 
+	background:#5D636A;
+	border-top-left-radius:2px;
+	border-bottom-right-radius:2px;
+	border-top-right-radius:2px;
+	border-bottom-left-radius:2px;
+	border-color:#FFBF00;
+}
+
+#Slider #Concacto .cuerpo_contacto_telefono .iconos_contacto_NO_linkeados_telefono #c_telefono
+{
+    color:white;
+	height:50%;
+	/*background:blue;*/
+	display:block;
+	position:relative;
+	left:20%;
+	margin-top:20px;
+
+	
+
+}
+
+
+
+/*pone el caracter de telefono*/
+#Slider #Concacto .cuerpo_contacto_telefono .iconos_contacto_NO_linkeados_telefono #c_telefono:nth-child(1):after{
+	text-decoration:none;
+	position:absolute;
+	font-size:5.5em;
+	left:50%;
+	transform:translateX(-50%);
+	font-family:'icomoon';
+	content:'\e942';
+}
+
+/*animación del hover telefono*/
+
+#Slider #Concacto .cuerpo_contacto_telefono .iconos_contacto_NO_linkeados_telefono #c_telefono:nth-child(1):hover{
+	
+	content:'\e942';
+	color:#00AFF0;
+}
+
+#Slider #Concacto .cuerpo_contacto_telefono .iconos_contacto_NO_linkeados_telefono #c_telefono_texto{
+   position:relative;
+   width:100%;
+   height:25px;
+   left:10%;
+   top:-20%;
+   /*background:white;*/
+   color:black;
+   font-size:2.3em;
+}
+
+#Slider #Concacto .cuerpo_contacto_telefono .iconos_contacto_NO_linkeados_telefono  a {
+   position:relative;
+   text-decoration:none;
+   width:100%;
+   height:auto;
+   left:11%;
+   background:none;
+    /*background:red;
+   opacity:0.5;*/
+   color:black;
+   font-size:1.9em;
+   margin-bottom:10px;
+}
+}
+
+
+
+/*--------------------------------------------Telefono-------------------------------------*/
+
+#Slider #Conocenos{
+	height:85vh;
+	background:#395B81;
+	font-family:'arial';
+	position:absolute;
+	text-align: center;
+	padding-bottom:50px;
+}
+
+
+#Slider #Conocenos  #span_conocenos{
+	position:relative;
+    top:110px;
+	margin-left:10vw;
+	margin-right:10vw;
+	/*background:cyan;*/
+	font-size:2.8em;
+
+}
+
+
+#Slider #Conocenos #contenedor_conocenos{
+
+    top:140px;
+	position:relative;
+	margin-left:20vw;
+	margin-right:20vw;
+	/*background:green;*/
+	height:auto;
+
+}
+
+#Slider #Conocenos #div_img_conocenos{
+	display:inline-block;
+	width:40%;
+	height:auto;
+	bottom:0px;
+	margin-left:20vw;
+	height:auto;
+	transform:translateY(0%);
+	/*background:brown;*/
+	margin:0px;
+	padding:0px;
+	position:relative;
+
+}
+
+#Slider #Conocenos #div_img_conocenos #figure_conocenos{
+	width:100%;
+	/*background:blue;*/
+	position:relative;
+	margin:0px;
+	padding:0px;
+
+}
+
+#Slider #Conocenos #div_img_conocenos #figure_conocenos #conocenos_img {
+	width:100%;
+    /*background:green;*/
+	position:relative;margin:0px;
+	padding:0px;
+
+}
+
+
+
+#Slider #Conocenos #contenedor_textos {
+	display:inline-block;
+	width:40%;
+	margin:0px;
+	padding:0px;	
+	transform:translateX(12.5%);
+	margin-top:0px;
+	/*background:brown;*/
+	top:0px;
+	padding-bottom:0px;
+	position:relative;
+}
+#Slider #Conocenos #contenedor_textos #titulo1,
+#Slider #Conocenos #contenedor_textos #titulo2{
+	padding-bottom:20px;
+	padding-top:20px;
+	font-size:1.5em; 
+
+}
+
+
+#Slider #Conocenos #contenedor_textos #textos1_conocenos,
+#Slider #Conocenos #contenedor_textos #textos2_conocenos{
+	font-size:1em; 
+}
+
+  
+}
+
+@media screen and (min-width:600px)
+{
+
+	/*solucion descuadre del menu movil*/
+ header nav {
+
+      	display:inline-block;
+      	vertical-align:middle;
+      	width:auto;
+      	position:relative;
+      	/*background:red;*/
+      	transform: translate(10%);
+      	position:relative;
+      	left:0px;
+      	z-index:999;
+      	
+      	
+      }
+
+    #Slider #Conocenos{
+	height:85vh;
+	background:#395B81;
+	font-family:'arial';
+	position:absolute;
+	text-align: center;
+	padding-bottom:100px;
+}
+
+
+#Slider #Conocenos  #span_conocenos{
+	position:relative;
+    top:110px;
+	margin-left:10vw;
+	margin-right:10vw;
+	/*background:cyan;*/
+	font-size:2.8em;
+
+}
+
+
+#Slider #Conocenos #contenedor_conocenos{
+
+    top:140px;
+	position:relative;
+	margin-left:20vw;
+	margin-right:20vw;
+	/*background:green;*/
+	height:auto;
+	padding-bottom:70px;
+
+}
+
+#Slider #Conocenos #div_img_conocenos{
+	display:inline-block;
+	width:80%;
+	height:auto;
+	bottom:0px;
+	margin-left:20vw;
+	height:auto;
+	transform:translateY(0%);
+	/*background:brown;*/
+	margin:0px;
+	padding:0px;
+	position:relative;
+
+}
+
+#Slider #Conocenos #div_img_conocenos #figure_conocenos{
+	width:100%;
+	/*background:blue;*/
+	position:relative;
+	margin:0px;
+	padding:0px;
+
+}
+
+#Slider #Conocenos #div_img_conocenos #figure_conocenos #conocenos_img {
+	width:100%;
+    /*background:green;*/
+	position:relative;margin:0px;
+	padding:0px;
+
+}
+
+
+
+#Slider #Conocenos #contenedor_textos {
+	display:inline-block;
+	width:100%;
+	margin:0px;
+	padding:0px;	
+	transform:translateX(0%);
+	margin-top:0px;
+	/*background:blue;*/
+	top:0px;
+	padding-bottom:0px;
+	position:relative;
+}
+#Slider #Conocenos #contenedor_textos #titulo1,
+#Slider #Conocenos #contenedor_textos #titulo2{
+	padding-bottom:20px;
+	padding-top:20px;
+	font-size:1.5em; 
+
+}
+
+
+#Slider #Conocenos #contenedor_textos #textos1_conocenos,
+#Slider #Conocenos #contenedor_textos #textos2_conocenos{
+	font-size:1em; 
+}
+
+/*--------------------------------------------FACEBOOK10-------------------------------------*/
+
+#Slider #Concacto .cuerpo_contacto_facebook{
+	top:140px;
+	position:relative;
+	margin-left:10vw;
+	margin-right:10vw;
+	background:red;
+	height:auto; 
+
+	
+
+}
+
+#Slider #Concacto .cuerpo_contacto_facebook .iconos_contacto_linkeados_facebook
+{
+	top:140px;
+	padding-top:10px;
+	padding-bottom:50px;
+	margin-top:70px;
+	width:100%;
+	height:auto; 
+	background:#5D636A;
+	border-top-left-radius:2px;
+	border-bottom-right-radius:2px;
+	border-top-right-radius:2px;
+	border-bottom-left-radius:2px;
+	border-color:#FFBF00;
+    /*background:green;*/
+
+
+}
+
+
+
+#Slider #Concacto .cuerpo_contacto_facebook .iconos_contacto_linkeados_facebook #c_facebook
+{
+    color:white;
+	height:50%;
+	width:20%;
+	background:blue;
+	display:block;
+	position:relative;
+	left:20%;
+	margin-top:20px;
+	
+
+}
+
+
+
+/*pone el caracter de facebook*/
+#Slider #Concacto .cuerpo_contacto_facebook .iconos_contacto_linkeados_facebook  #c_facebook:nth-child(1):after{
+	text-decoration:none;
+	position:absolute;
+	font-size:5.5em;
+	left:50%;
+	transform:translateX(-50%);
+	font-family:'icomoon';
+	content:'\e900';
+}
+
+/*animación del hover facebook*/
+
+#Slider #Concacto .cuerpo_contacto_facebook .iconos_contacto_linkeados_facebook #c_facebook:nth-child(1):hover{
+	
+	content:'\e900';
+	color:#3b5999;
+}
+
+#Slider #Concacto .cuerpo_contacto_facebook .iconos_contacto_linkeados_facebook #c_facebook_texto{
+   position:relative;
+   width:100%;
+   height:25px;
+   left:10%;
+   top:-20%;
+   /*background:white;*/
+   color:black;
+   font-size:2.3em;
+}
+
+#Slider #Concacto .cuerpo_contacto_facebook .iconos_contacto_linkeados_facebook #c_facebook_texto_link a{
+   position:relative;
+   text-decoration:none;
+   width:100%;
+   height:auto;
+   left:11%;
+   background:none;
+    /*background:red;
+   opacity:0.5;*/
+   color:black;
+   font-size:1.9em;
+   margin-bottom:10px;
+}
+
+/*--------------------------------------------FACEBOOK-------------------------------------*/
+
+/*----------------------------------------------YAHOO--------------------------------------*/
+
+#Slider #Concacto .cuerpo_contacto_yahoo{
+	top:140px;
+	position:relative;
+	margin-left:10vw;
+	margin-right:10vw;
+	/*background:red;*/
+	height:auto; 
+
+	
+
+}
+
+#Slider #Concacto .cuerpo_contacto_yahoo .iconos_contacto_linkeados_yahoo
+{
+	top:140px;
+	padding-top:10px;
+	padding-bottom:50px;
+	margin-top:70px;
+	width:100%;
+	height:auto; 
+	background:#5D636A;
+	border-top-left-radius:2px;
+	border-bottom-right-radius:2px;
+	border-top-right-radius:2px;
+	border-bottom-left-radius:2px;
+	border-color:#FFBF00;
+}
+
+#Slider #Concacto .cuerpo_contacto_yahoo .iconos_contacto_linkeados_yahoo #c_yahoo
+{
+    color:white;
+	height:50%;
+	background:blue;
+	display:block;
+	position:relative;
+	left:20%;
+	margin-top:20px;
+	
+
+}
+
+
+
+/*pone el caracter de yahoo*/
+#Slider #Concacto .cuerpo_contacto_yahoo .iconos_contacto_linkeados_yahoo #c_yahoo:nth-child(1):after{
+	text-decoration:none;
+	position:absolute;
+	font-size:5.5em;
+	left:50%;
+	transform:translateX(-50%);
+	font-family:'icomoon';
+	content:'\eabc';
+}
+
+/*animación del hover yahoo*/
+
+#Slider #Concacto .cuerpo_contacto_yahoo .iconos_contacto_linkeados_yahoo #c_yahoo:nth-child(1):hover{
+	
+	content:'\eabc';
+	color:#410093;
+}
+
+#Slider #Concacto .cuerpo_contacto_yahoo .iconos_contacto_linkeados_yahoo #c_yahoo_texto{
+   position:relative;
+   width:100%;
+   height:25px;
+   left:10%;
+   top:-20%;
+   /*background:white;*/
+   color:black;
+   font-size:2.3em;
+}
+
+#Slider #Concacto .cuerpo_contacto_yahoo .iconos_contacto_linkeados_yahoo #c_yahoo_texto_link a{
+   position:relative;
+   text-decoration:none;
+   width:100%;
+   height:auto;
+   left:14%;
+   background:none;
+    /*background:red;
+   opacity:0.5;*/
+   color:black;
+   font-size:1.9em;
+   margin-bottom:10px;
+}
+
+/*----------------------------------------------YAHOO--------------------------------------*/
+
+/*----------------------------------------------GMAIL--------------------------------------*/
+
+#Slider #Concacto .cuerpo_contacto_gmail{
+	top:140px;
+	position:relative;
+	margin-left:10vw;
+	margin-right:10vw;
+	/*background:red;*/
+	height:auto; 
+
+	
+
+}
+
+#Slider #Concacto .cuerpo_contacto_gmail .iconos_contacto_linkeados_gmail
+{
+	top:140px;
+	padding-top:10px;
+	padding-bottom:50px;
+	margin-top:70px;
+	width:100%;
+	height:auto; 
+	background:#5D636A;
+	border-top-left-radius:2px;
+	border-bottom-right-radius:2px;
+	border-top-right-radius:2px;
+	border-bottom-left-radius:2px;
+	border-color:#FFBF00;
+}
+
+#Slider #Concacto .cuerpo_contacto_gmail .iconos_contacto_linkeados_gmail #c_gmail
+{
+     color:white;
+	height:50%;
+	background:blue;
+	display:block;
+	position:relative;
+	left:20%;
+	margin-top:20px;
+
+}
+
+
+
+/*pone el caracter de gmail*/
+#Slider #Concacto .cuerpo_contacto_gmail .iconos_contacto_linkeados_gmail #c_gmail:nth-child(1):after{
+	text-decoration:none;
+	position:absolute;
+	font-size:5.5em;
+	left:50%;
+	transform:translateX(-50%);
+	font-family:'icomoon';
+	content:'\e906';
+}
+
+/*animación del hover gmail*/
+
+#Slider #Concacto .cuerpo_contacto_gmail .iconos_contacto_linkeados_gmail #c_gmail:nth-child(1):hover{
+	
+	content:'\e906';
+	color:#dd4b39;
+}
+
+#Slider #Concacto .cuerpo_contacto_gmail .iconos_contacto_linkeados_gmail #c_gmail_texto{
+  position:relative;
+   width:100%;
+   height:25px;
+   left:10%;
+   top:-20%;
+   /*background:white;*/
+   color:black;
+   font-size:2.3em;
+}
+
+#Slider #Concacto .cuerpo_contacto_gmail .iconos_contacto_linkeados_gmail #c_gmail_texto_link a{
+   position:relative;
+   text-decoration:none;
+   width:100%;
+   height:auto;
+   left:11%;
+   background:none;
+    /*background:red;
+   opacity:0.5;*/
+   color:black;
+   font-size:1.9em;
+   margin-bottom:10px;
+}
+
+/*----------------------------------------------GMAIL--------------------------------------*/
+
+
+/*--------------------------------------------WhatsApp-------------------------------------*/
+#Slider #Concacto .cuerpo_contacto_whatsapp{
+	top:140px;
+	position:relative;
+	margin-left:20vw;
+	margin-right:20vw;
+	/*background:red;*/
+	height:auto; 
+
+	
+
+}
+
+#Slider #Concacto .cuerpo_contacto_whatsapp .iconos_contacto_NO_linkeados_whatsapp
+{
+	top:140px;
+	padding-top:10px;
+	padding-bottom:50px;
+	margin-top:70px;
+	width:100%;
+	height:auto; 
+	background:#5D636A;
+	border-top-left-radius:2px;
+	border-bottom-right-radius:2px;
+	border-top-right-radius:2px;
+	border-bottom-left-radius:2px;
+	border-color:#FFBF00;
+}
+
+#Slider #Concacto .cuerpo_contacto_whatsapp .iconos_contacto_NO_linkeados_whatsapp #c_whatsapp
+{
+    
+    color:white;
+	height:50%;
+	padding-bottom:0px;
+	margin-bottom:0px;
+	display:block;
+	position:relative;
+	left:20%;
+	margin-top:20px;
+	
+
+}
+
+
+
+/*pone el caracter de WhatsApp*/
+#Slider #Concacto .cuerpo_contacto_whatsapp .iconos_contacto_NO_linkeados_whatsapp #c_whatsapp:nth-child(1):after{
+	text-decoration:none;
+	position:absolute;
+	font-size:5.5em;
+	left:50%;
+	transform:translateX(-50%);
+	font-family:'icomoon';
+	content:'\ea93';
+}
+
+/*animación del hover whatsApp*/
+
+#Slider #Concacto .cuerpo_contacto_whatsapp .iconos_contacto_NO_linkeados_whatsapp #c_whatsapp:nth-child(1):hover{
+	
+	content:'\ea93';
+	color:#25D366;
+}
+
+#Slider #Concacto .cuerpo_contacto_whatsapp .iconos_contacto_NO_linkeados_whatsapp  #c_whatsapp_texto{
+   position:relative;
+   width:100%;
+   height:25px;
+   left:10%;
+   top:-20%;
+   /*background:white;*/
+   color:black;
+   font-size:2.3em;
+}
+
+#Slider #Concacto .cuerpo_contacto_whatsapp .iconos_contacto_NO_linkeados_whatsapp  #c_whatsapp_texto2 {
+   position:relative;
+   text-decoration:none;
+   width:100%;
+   height:auto;
+   left:11%;
+   background:none;
+    /*background:red;
+   opacity:0.5;*/
+   color:black;
+   font-size:1.9em;
+   margin-bottom:10px;
+}
+
+/*--------------------------------------------WhatsApp-------------------------------------*/
+
+/*--------------------------------------------Telefono-------------------------------------*/
+
+#Slider #Concacto .cuerpo_contacto_telefono{
+	top:140px;
+	position:relative;
+	margin-left:20vw;
+	margin-right:20vw;
+	/*background:red;*/
+	height:auto; 
+
+	
+
+}
+
+#Slider #Concacto .cuerpo_contacto_telefono .iconos_contacto_NO_linkeados_telefono
+{   
+	top:140px;
+	padding-top:10px;
+	padding-bottom:50px;
+	margin-top:70px;
+	width:100%;
+	height:auto; 
+	background:#5D636A;
+	border-top-left-radius:2px;
+	border-bottom-right-radius:2px;
+	border-top-right-radius:2px;
+	border-bottom-left-radius:2px;
+	border-color:#FFBF00;
+}
+
+#Slider #Concacto .cuerpo_contacto_telefono .iconos_contacto_NO_linkeados_telefono #c_telefono
+{
+    color:white;
+	height:50%;
+	/*background:blue;*/
+	display:block;
+	position:relative;
+	left:20%;
+	margin-top:20px;
+
+	
+
+}
+
+
+
+/*pone el caracter de telefono*/
+#Slider #Concacto .cuerpo_contacto_telefono .iconos_contacto_NO_linkeados_telefono #c_telefono:nth-child(1):after{
+	text-decoration:none;
+	position:absolute;
+	font-size:5.5em;
+	left:50%;
+	transform:translateX(-50%);
+	font-family:'icomoon';
+	content:'\e942';
+}
+
+/*animación del hover telefono*/
+
+#Slider #Concacto .cuerpo_contacto_telefono .iconos_contacto_NO_linkeados_telefono #c_telefono:nth-child(1):hover{
+	
+	content:'\e942';
+	color:#00AFF0;
+}
+
+#Slider #Concacto .cuerpo_contacto_telefono .iconos_contacto_NO_linkeados_telefono #c_telefono_texto{
+   position:relative;
+   width:100%;
+   height:25px;
+   left:10%;
+   top:-20%;
+   /*background:white;*/
+   color:black;
+   font-size:2.3em;
+}
+
+#Slider #Concacto .cuerpo_contacto_telefono .iconos_contacto_NO_linkeados_telefono  #c_telefono_texto2 {
+   position:relative;
+   text-decoration:none;
+   width:100%;
+   height:auto;
+   left:11%;
+   background:none;
+    /*background:red;
+   opacity:0.5;*/
+   color:black;
+   font-size:1.9em;
+   margin-bottom:10px;
+}
+
+
+
+/*--------------------------------------------Telefono-------------------------------------*/
+
+#Slider #Conocenos{
+	height:85vh;
+	background:#395B81;
+	font-family:'arial';
+	position:absolute;
+	text-align: center;
+	padding-bottom:50px;
+}
+
+
+#Slider #Conocenos  #span_conocenos{
+	position:relative;
+    top:110px;
+	margin-left:10vw;
+	margin-right:10vw;
+	/*background:cyan;*/
+	font-size:2.8em;
+
+}
+
+
+#Slider #Conocenos #contenedor_conocenos{
+
+    top:140px;
+	position:relative;
+	margin-left:20vw;
+	margin-right:20vw;
+	/*background:green;*/
+	height:auto;
+
+}
+
+#Slider #Conocenos #div_img_conocenos{
+	display:inline-block;
+	width:40%;
+	height:auto;
+	bottom:0px;
+	margin-left:20vw;
+	height:auto;
+	transform:translateY(0%);
+	/*background:brown;*/
+	margin:0px;
+	padding:0px;
+	position:relative;
+
+}
+
+#Slider #Conocenos #div_img_conocenos #figure_conocenos{
+	width:100%;
+	/*background:blue;*/
+	position:relative;
+	margin:0px;
+	padding:0px;
+
+}
+
+#Slider #Conocenos #div_img_conocenos #figure_conocenos #conocenos_img {
+	width:100%;
+    /*background:green;*/
+	position:relative;margin:0px;
+	padding:0px;
+
+}
+
+
+
+#Slider #Conocenos #contenedor_textos {
+	display:inline-block;
+	width:40%;
+	margin:0px;
+	padding:0px;	
+	transform:translateX(12.5%);
+	margin-top:0px;
+	/*background:brown;*/
+	top:0px;
+	padding-bottom:0px;
+	position:relative;
+}
+#Slider #Conocenos #contenedor_textos #titulo1,
+#Slider #Conocenos #contenedor_textos #titulo2{
+	padding-bottom:20px;
+	padding-top:20px;
+	font-size:1.5em; 
+
+}
+
+
+#Slider #Conocenos #contenedor_textos #textos1_conocenos,
+#Slider #Conocenos #contenedor_textos #textos2_conocenos{
+	font-size:1em; 
+}
+	 
+}
+/*Tamaño para tablet*/
+@media screen and (min-width:767px)
+{
+	#Slider #Inicio{
+	height:90vh;
+	background:#395B81;
+	font-family:'arial';
+	position:absolute;
+	text-align: center;
+	padding-bottom:90px;
+
+}
+
+
+      /*botones fuera del header*/
+	  header #prev_section ,
+      header #next_section{
+           position:absolute;
+           width:40px;
+           height:40px;
+           background:#3E3E3E;
+           right:30px;
+           z-index:999;
+           /*Sí lo quiciera redondo*/
+           border-radius:50%;
+
+      }
+   /*tamño del header*/
+      header{
+      	height:70px;
+
+      }
+
+      header h1{
+      	display: inline-block;
+      	width:20%;
+      	margin:0px;
+      	height:50px;
+      	margin-left: 30px;
+      	line-height:45px;/*Se separa de la parte de arriba */
+      	min-width:200px;
+
+      }
+
+      /*los hijos de h1*/
+
+      header h1 > *{
+      	display:inline-block;/*mantien el logo y impresos alineados*/
+      	vertical-align:middle;
+      	text-decoration:none;
+      	color:white;
+      	font-size:0.5em;
+      	margin:0px 3px;
+
+
+      }
+      /*Tamaño del contendor del figure*/
+
+      header h1 figure{
+      	height:40px;
+      	width:40px;
+      	margin:0px;
+
+      
+
+      }
+
+      /*ajustar el logo a la imagen del figure*/
+
+      header h1 figure img{
+      	margin-top:0px;
+      	margin-bottom:0px;
+      	width:100%;
+      }
+/*contendero de la navegación*/
+
+      header nav {
+
+      	display:inline-block;
+      	vertical-align:middle;
+      	width:auto;
+      	position:relative;
+      	/*background:red;*/
+      	transform: translate(10%);
+      	position:relative;
+      	left:0px;
+
+      	
+      	
+      }
+
+      header nav #showMenu,
+      header nav #hideMenu{
+      	display:none;
+      }
+
+      header nav #card_menu{
+      	display:inline-block;
+      	border:none;
+      	position:relative;
+      	top:0px;
+      	width:100%;
+      	text-align:right;
+      	padding-bottom:0px;
+      	background:none
+
+
+      }
+
+      header nav #card_menu figure{
+      	display:none;
+      }
+
+      header nav #card_menu ul{
+
+      	margin:0px;
+      	padding:0px;
+      	margin-top:0px;
+
+      }
+
+
+      header nav #card_menu ul li{
+
+       display:inline-block;
+       width:95px;
+       text-align:center;
+       font-size:.9em;
+       margin:0px -2px;
+
+
+      }
+
+
+      header nav #card_menu ul li a{
+
+       color:#fff;
+
+      }
+
+      /*Posicion de botones de desplazamiento*/
+
+      header #prev_section{
+      	top:70px;
+      	right:70px;
+
+      }
+
+      header #next_section{
+      	top:70px;
+      	right:20px;
+      }
+
+        header #prev_section img,
+      header #next_section img{
+
+           width:50%;
+           height:auto;
+           top:10px;
+           left:8px;
+           right:8px;
+      }
+
+
+#Slider #Conocenos #contenedor_conocenos #div_img_conocenos figure,
+#Slider #Conocenos #contenedor_conocenos #div_img_conocenos figure img{
+	
+	width:380px;
+	height:380px;
+    transform:translateX(5%);
+	margin:0;
+	padding-top:9px;
+	padding-bottom:19px;
+
+}
+
+
+
+
+
+#Slider #Conocenos #contenedor_conocenos .contenedor_textos1 {
+	
+	width:100%;
+	height:auto;
+	/*background:#fff;
+	border-radius:25%;*/
+	top:-50px;
+	position:relative;
+}
+
+#Slider #Conocenos #contenedor_conocenos .contenedor_textos2 {
+	
+	width:100%;
+	height:auto;
+	/*background:#fff;
+	border-radius:25%;*/
+	top:0px;
+	position:relative;
+	padding-bottom:100px;
+}
+#Slider #Conocenos #contenedor_conocenos #contenedor_textos1 #titulo1 p,
+#Slider #Conocenos #contenedor_conocenos #contenedor_textos2 #titulo2 p{
+	padding-bottom:20px;
+	padding-top:20px;
+	font-size:3.5em;
+	color:red;
+
+}
+
+
+#Slider #Conocenos #contenedor_conocenos #contenedor_textos #textos1_conocenos,
+#Slider #Conocenos #contenedor_conocenos #contenedor_textos #textos2_conocenos{
+	font-size:3em; 
+}
+
+
+/*ajustar texto a tablet*/
+
+#Slider #Concacto .cuerpo_contacto_yahoo .iconos_contacto_linkeados_yahoo #c_yahoo_texto_link a{
+   position:relative;
+   text-decoration:none;
+   width:100%;
+   height:auto;
+   left:11%;
+   background:none;
+    /*background:red;
+   opacity:0.5;*/
+   color:black;
+   font-size:1.5em;
+   margin-bottom:10px;
+}
+
+#Slider #Concacto .cuerpo_contacto_gmail .iconos_contacto_linkeados_gmail #c_gmail_texto_link a{
+   position:relative;
+   text-decoration:none;
+   width:100%;
+   height:auto;
+   left:11%;
+   background:none;
+    /*background:red;
+   opacity:0.5;*/
+   color:black;
+   font-size:1.6em;
+   margin-bottom:10px;
+}
+
+
+}
+
+@media screen and (min-width:950px)
+{
+#Slider #Conocenos #contenedor_conocenos #div_img_conocenos figure,
+#Slider #Conocenos #contenedor_conocenos #div_img_conocenos figure img{
+	
+	width:450px;
+	height:450px;
+    transform:translateX(10%);
+	margin:0;
+	padding-top:9px;
+	padding-bottom:19px;
+
+}
+
+@media screen and (min-width:1200px)
+{
+#Slider #Conocenos #contenedor_conocenos #div_img_conocenos figure,
+#Slider #Conocenos #contenedor_conocenos #div_img_conocenos figure img{
+	
+	width:450px;
+	height:450px;
+    transform:translateX(25%);
+	margin:0;
+	padding-top:9px;
+	padding-bottom:19px;
+
+}
+
+
+
+
+
+#Slider #Conocenos #contenedor_conocenos .contenedor_textos1 {
+	
+	width:100%;
+	height:auto;
+	/*background:#fff;
+	border-radius:25%;*/
+	top:-50px;
+	position:relative;
+}
+
+#Slider #Conocenos #contenedor_conocenos .contenedor_textos2 {
+	
+	width:100%;
+	height:auto;
+	/*background:#fff;
+	border-radius:25%;*/
+	top:0px;
+	position:relative;
+	padding-bottom:100px;
+}
+#Slider #Conocenos #contenedor_conocenos #contenedor_textos1 #titulo1 p,
+#Slider #Conocenos #contenedor_conocenos #contenedor_textos2 #titulo2 p{
+	padding-bottom:20px;
+	padding-top:20px;
+	font-size:2.8em;
+	color:red;
+
+}
+
+
+#Slider #Conocenos #contenedor_conocenos #contenedor_textos #textos1_conocenos,
+#Slider #Conocenos #contenedor_conocenos #contenedor_textos #textos2_conocenos{
+	font-size:2.5em; 
+}
+
+
+	
+	 /*--------------------------------------------FACEBOOK10-------------------------------------*/
+
+#Slider #Concacto .cuerpo_contacto_facebook{
+	top:140px;
+	position:relative;
+	margin-left:20vw;
+	margin-right:20vw;
+	background:red;
+	height:auto; 
+
+	
+
+}
+
+#Slider #Concacto .cuerpo_contacto_facebook .iconos_contacto_linkeados_facebook
+{
+	top:140px;
+	padding-top:10px;
+	padding-bottom:50px;
+	margin-top:70px;
+	width:100%;
+	height:auto; 
+	background:#5D636A;
+	border-top-left-radius:2px;
+	border-bottom-right-radius:2px;
+	border-top-right-radius:2px;
+	border-bottom-left-radius:2px;
+	border-color:#FFBF00;
+    /*background:green;*/
+
+
+}
+
+
+
+#Slider #Concacto .cuerpo_contacto_facebook .iconos_contacto_linkeados_facebook #c_facebook
+{
+    color:white;
+	height:50%;
+	width:20%;
+	background:blue;
+	display:block;
+	position:relative;
+	left:20%;
+	margin-top:20px;
+	
+
+}
+
+
+
+/*pone el caracter de facebook*/
+#Slider #Concacto .cuerpo_contacto_facebook .iconos_contacto_linkeados_facebook  #c_facebook:nth-child(1):after{
+	text-decoration:none;
+	position:absolute;
+	font-size:5.5em;
+	left:50%;
+	transform:translateX(-50%);
+	font-family:'icomoon';
+	content:'\e900';
+}
+
+/*animación del hover facebook*/
+
+#Slider #Concacto .cuerpo_contacto_facebook .iconos_contacto_linkeados_facebook #c_facebook:nth-child(1):hover{
+	
+	content:'\e900';
+	color:#3b5999;
+}
+
+#Slider #Concacto .cuerpo_contacto_facebook .iconos_contacto_linkeados_facebook #c_facebook_texto{
+   position:relative;
+   width:100%;
+   height:25px;
+   left:10%;
+   top:-20%;
+   /*background:white;*/
+   color:black;
+   font-size:2.3em;
+}
+
+#Slider #Concacto .cuerpo_contacto_facebook .iconos_contacto_linkeados_facebook #c_facebook_texto_link a{
+   position:relative;
+   text-decoration:none;
+   width:100%;
+   height:auto;
+   left:11%;
+   background:none;
+    /*background:red;
+   opacity:0.5;*/
+   color:black;
+   font-size:1.9em;
+   margin-bottom:10px;
+}
+
+/*--------------------------------------------FACEBOOK-------------------------------------*/
+
+/*----------------------------------------------YAHOO--------------------------------------*/
+
+#Slider #Concacto .cuerpo_contacto_yahoo{
+	top:140px;
+	position:relative;
+	margin-left:20vw;
+	margin-right:20vw;
+	/*background:red;*/
+	height:auto; 
+
+	
+
+}
+
+#Slider #Concacto .cuerpo_contacto_yahoo .iconos_contacto_linkeados_yahoo
+{
+	top:140px;
+	padding-top:10px;
+	padding-bottom:50px;
+	margin-top:70px;
+	width:100%;
+	height:auto; 
+	background:#5D636A;
+	border-top-left-radius:2px;
+	border-bottom-right-radius:2px;
+	border-top-right-radius:2px;
+	border-bottom-left-radius:2px;
+	border-color:#FFBF00;
+}
+
+#Slider #Concacto .cuerpo_contacto_yahoo .iconos_contacto_linkeados_yahoo #c_yahoo
+{
+    color:white;
+	height:50%;
+	background:blue;
+	display:block;
+	position:relative;
+	left:20%;
+	margin-top:20px;
+	
+
+}
+
+
+
+/*pone el caracter de yahoo*/
+#Slider #Concacto .cuerpo_contacto_yahoo .iconos_contacto_linkeados_yahoo #c_yahoo:nth-child(1):after{
+	text-decoration:none;
+	position:absolute;
+	font-size:5.5em;
+	left:50%;
+	transform:translateX(-50%);
+	font-family:'icomoon';
+	content:'\eabc';
+}
+
+/*animación del hover yahoo*/
+
+#Slider #Concacto .cuerpo_contacto_yahoo .iconos_contacto_linkeados_yahoo #c_yahoo:nth-child(1):hover{
+	
+	content:'\eabc';
+	color:#410093;
+}
+
+#Slider #Concacto .cuerpo_contacto_yahoo .iconos_contacto_linkeados_yahoo #c_yahoo_texto{
+   position:relative;
+   width:100%;
+   height:25px;
+   left:10%;
+   top:-20%;
+   /*background:white;*/
+   color:black;
+   font-size:2.3em;
+}
+
+#Slider #Concacto .cuerpo_contacto_yahoo .iconos_contacto_linkeados_yahoo #c_yahoo_texto_link a{
+   position:relative;
+   text-decoration:none;
+   width:100%;
+   height:auto;
+   left:14%;
+   background:none;
+   /*background:red;
+   opacity:0.5;*/
+   color:black;
+   font-size:1.6em;
+   margin-bottom:10px;
+}
+
+/*----------------------------------------------YAHOO--------------------------------------*/
+
+/*----------------------------------------------GMAIL--------------------------------------*/
+
+#Slider #Concacto .cuerpo_contacto_gmail{
+	top:140px;
+	position:relative;
+	margin-left:20vw;
+	margin-right:20vw;
+	/*background:red;*/
+	height:auto; 
+
+	
+
+}
+
+#Slider #Concacto .cuerpo_contacto_gmail .iconos_contacto_linkeados_gmail
+{
+	top:140px;
+	padding-top:10px;
+	padding-bottom:50px;
+	margin-top:70px;
+	width:100%;
+	height:auto; 
+	background:#5D636A;
+	border-top-left-radius:2px;
+	border-bottom-right-radius:2px;
+	border-top-right-radius:2px;
+	border-bottom-left-radius:2px;
+	border-color:#FFBF00;
+}
+
+#Slider #Concacto .cuerpo_contacto_gmail .iconos_contacto_linkeados_gmail #c_gmail
+{
+     color:white;
+	height:50%;
+	background:blue;
+	display:block;
+	position:relative;
+	left:20%;
+	margin-top:20px;
+
+}
+
+
+
+/*pone el caracter de gmail*/
+#Slider #Concacto .cuerpo_contacto_gmail .iconos_contacto_linkeados_gmail #c_gmail:nth-child(1):after{
+	text-decoration:none;
+	position:absolute;
+	font-size:5.5em;
+	left:50%;
+	transform:translateX(-50%);
+	font-family:'icomoon';
+	content:'\e906';
+}
+
+/*animación del hover gmail*/
+
+#Slider #Concacto .cuerpo_contacto_gmail .iconos_contacto_linkeados_gmail #c_gmail:nth-child(1):hover{
+	
+	content:'\e906';
+	color:#dd4b39;
+}
+
+#Slider #Concacto .cuerpo_contacto_gmail .iconos_contacto_linkeados_gmail #c_gmail_texto{
+  position:relative;
+   width:100%;
+   height:25px;
+   left:10%;
+   top:-20%;
+   /*background:white;*/
+   color:black;
+   font-size:2.3em;
+}
+
+#Slider #Concacto .cuerpo_contacto_gmail .iconos_contacto_linkeados_gmail #c_gmail_texto_link a{
+   position:relative;
+   text-decoration:none;
+   width:100%;
+   height:auto;
+   left:11%;
+   background:none;
+    /*background:red;
+   opacity:0.5;*/
+   color:black;
+   font-size:1.6em;
+   margin-bottom:10px;
+}
+
+/*----------------------------------------------GMAIL--------------------------------------*/
+
+
+/*--------------------------------------------WhatsApp-------------------------------------*/
+#Slider #Concacto .cuerpo_contacto_whatsapp{
+	top:140px;
+	position:relative;
+	margin-left:20vw;
+	margin-right:20vw;
+	/*background:red;*/
+	height:auto; 
+
+	
+
+}
+
+#Slider #Concacto .cuerpo_contacto_whatsapp .iconos_contacto_NO_linkeados_whatsapp
+{
+	top:140px;
+	padding-top:10px;
+	padding-bottom:50px;
+	margin-top:70px;
+	width:100%;
+	height:auto; 
+	background:#5D636A;
+	border-top-left-radius:2px;
+	border-bottom-right-radius:2px;
+	border-top-right-radius:2px;
+	border-bottom-left-radius:2px;
+	border-color:#FFBF00;
+}
+
+#Slider #Concacto .cuerpo_contacto_whatsapp .iconos_contacto_NO_linkeados_whatsapp #c_whatsapp
+{
+    
+    color:white;
+	height:50%;
+	padding-bottom:0px;
+	margin-bottom:0px;
+	display:block;
+	position:relative;
+	left:20%;
+	margin-top:20px;
+	
+
+}
+
+
+
+/*pone el caracter de WhatsApp*/
+#Slider #Concacto .cuerpo_contacto_whatsapp .iconos_contacto_NO_linkeados_whatsapp #c_whatsapp:nth-child(1):after{
+	text-decoration:none;
+	position:absolute;
+	font-size:5.5em;
+	left:50%;
+	transform:translateX(-50%);
+	font-family:'icomoon';
+	content:'\ea93';
+}
+
+/*animación del hover whatsApp*/
+
+#Slider #Concacto .cuerpo_contacto_whatsapp .iconos_contacto_NO_linkeados_whatsapp #c_whatsapp:nth-child(1):hover{
+	
+	content:'\ea93';
+	color:#25D366;
+}
+
+#Slider #Concacto .cuerpo_contacto_whatsapp .iconos_contacto_NO_linkeados_whatsapp  #c_whatsapp_texto{
+   position:relative;
+   width:100%;
+   height:25px;
+   left:10%;
+   top:-20%;
+   /*background:white;*/
+   color:black;
+   font-size:2.3em;
+}
+
+#Slider #Concacto .cuerpo_contacto_whatsapp .iconos_contacto_NO_linkeados_whatsapp  #c_whatsapp_texto_link a {
+   position:relative;
+   text-decoration:none;
+   width:100%;
+   height:auto;
+   left:11%;
+   background:none;
+    /*background:red;
+   opacity:0.5;*/
+   color:black;
+   font-size:1.9em;
+   margin-bottom:10px;
+}
+
+/*--------------------------------------------WhatsApp-------------------------------------*/
+
+/*--------------------------------------------Telefono-------------------------------------*/
+
+#Slider #Concacto .cuerpo_contacto_telefono{
+	top:140px;
+	position:relative;
+	margin-left:20vw;
+	margin-right:20vw;
+	/*background:red;*/
+	height:auto; 
+
+	
+
+}
+
+#Slider #Concacto .cuerpo_contacto_telefono .iconos_contacto_NO_linkeados_telefono
+{   
+	top:140px;
+	padding-top:10px;
+	padding-bottom:50px;
+	margin-top:70px;
+	width:100%;
+	height:auto; 
+	background:#5D636A;
+	border-top-left-radius:2px;
+	border-bottom-right-radius:2px;
+	border-top-right-radius:2px;
+	border-bottom-left-radius:2px;
+	border-color:#FFBF00;
+}
+
+#Slider #Concacto .cuerpo_contacto_telefono .iconos_contacto_NO_linkeados_telefono #c_telefono
+{
+    color:white;
+	height:50%;
+	/*background:blue;*/
+	display:block;
+	position:relative;
+	left:20%;
+	margin-top:20px;
+
+	
+
+}
+
+
+
+/*pone el caracter de telefono*/
+#Slider #Concacto .cuerpo_contacto_telefono .iconos_contacto_NO_linkeados_telefono #c_telefono:nth-child(1):after{
+	text-decoration:none;
+	position:absolute;
+	font-size:5.5em;
+	left:50%;
+	transform:translateX(-50%);
+	font-family:'icomoon';
+	content:'\e942';
+}
+
+/*animación del hover telefono*/
+
+#Slider #Concacto .cuerpo_contacto_telefono .iconos_contacto_NO_linkeados_telefono #c_telefono:nth-child(1):hover{
+	
+	content:'\e942';
+	color:#00AFF0;
+}
+
+#Slider #Concacto .cuerpo_contacto_telefono .iconos_contacto_NO_linkeados_telefono #c_telefono_texto{
+   position:relative;
+   width:100%;
+   height:25px;
+   left:10%;
+   top:-20%;
+   /*background:white;*/
+   color:black;
+   font-size:2.3em;
+}
+
+#Slider #Concacto .cuerpo_contacto_telefono .iconos_contacto_NO_linkeados_telefono  #c_telefono_texto2 {
+   position:relative;
+   text-decoration:none;
+   width:100%;
+   height:auto;
+   left:11%;
+   background:none;
+   /*background:red;
+   opacity:0.5;*/
+   color:black;
+   font-size:1.9em;
+   margin-bottom:10px;
+}
+
+
+
+/*--------------------------------------------Telefono-------------------------------------*/
+
+}
+

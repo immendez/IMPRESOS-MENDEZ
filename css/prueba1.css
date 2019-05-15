@@ -1,0 +1,14 @@
+
+
+
+div{
+
+background: linear-gradient(132deg,#12B819,black);
+	animation: Postersdos 15s ease infinite;
+}
+
+@keyframes Postersdos{
+	0% {background-position: 0% 50%;}
+	50% {background-position: 100% 50%;}
+	100% {background-position: 0% 50%;}
+}

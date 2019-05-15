@@ -1,0 +1,818 @@
+<!DOCT<!DOCTYPE html>
+<html lang="Mx-es">
+<head>
+  
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/iconmoon.css.css">
+    <link rel="stylesheet" type="text/css" href="css/redes_sociales.css">
+	<script type="text/javascript" src="js/modernizr-custom.js"></script>
+	<script type="text/javascript" src="js/displayMenu.js"></script>
+	<script type="text/javascript" src="js/displaySectiont.js"></script>
+	<script type="text/javascript" src="js/navSection.js"></script>
+
+  <script type="text/javascript" src="js/displaySectiontportafolios.js"></script>
+  <!--Iconos con fontawesme https://www.bootstrapcdn.com/fontawesome/-->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/logo_imp.png" sizes="40x40">
+	<title>Impresos Mendez</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="keywords" content="Imprenta,Tarjetas de presentación,Tarjetas,Lonas,Tazas,Articulos Promocionales">
+    <meta name="description" content="Publicidad Impresa Para tu negocio">
+    <meta name="author" content="Mario Mendez"><!--link de mi sitio web-->
+    <meta name="owner" content="Impresos Mendez">
+    <meta name="robots" content="index, follow">
+</head>
+<body>
+	<header>
+		<h1>
+			<a href="index.html">
+				<figure>
+					<img src="img/logo_imp.png" alt="logo Impresos Mendez">
+				</figure>
+			</a>	
+			<a href="index.html">Impresos Mendez</a>
+
+	    </h1>
+        
+        <nav id="ioMenu">
+        	<figure id="showMenu" class="ioMenuMovil" onclick="displayMenu()">
+        		   <img src="iconos/MENU.png">
+            </figure>
+
+        	<div id="card_menu">
+        		
+			
+			<figure id="hideMenu" class="ioMenuMovil" onclick="displayMenu()">
+					<img src="iconos/SALIR.png" alt="logo Impresos Mendez">
+			</figure>
+			<figure id="logo_menu">
+					<img src="img/logo_imp.png">
+			</figure>
+				<ul><!--lo normal seria <li><a href="index.html">Inicio</a></li> 
+
+                pero por rasones de SEO por poco Contenido se deja el # en el href
+				-->
+					<li><a  onclick="navSection('Inicio')" href="#">Inicio</a></li>
+					<li><a  onclick="navSection('Conocenos')" href="#">Conocenos</a></li>
+					<li><a  onclick="navSection('Trabajos')" href="#">Trabajos</a></li>
+					<li><a  onclick="navSection('Portafolio')" href="#">Catalogo</a></li>
+          <li><a  onclick="navSection('Concacto')" href="#">Concacto</a></li>
+					
+				</ul>			
+			</div>
+        </nav>
+
+
+	   <div id="prev_section" onclick="displaySectiont('prev')"><img src="iconos/Flecha.png"></div>
+	   <div id="next_section" onclick="displaySectiont('next')"><img src="iconos/Flecha.png"></div>
+	</header>
+
+	<!---------------------------------------------
+    -----------Slider entre secciónes de la pagina-
+	----------------------------------------------->
+
+    <div id="Slider">
+    	<section class="slide" id="Inicio" style="display:block;">
+         <div class=animación_inicio>
+            <div id="particles-js"></div>
+         </div>
+
+         <div class="logo_inicio">
+            
+            <figure>
+                <img src="img/logo_imp.png" alt="logo Impresos Mendez">
+            </figure>
+            <h2>Impresos Mendez</h2>
+            <h3>Publicidad Para Tu
+            <strong>
+              <span id="c">Negocio
+              </span>
+              <span id="m">Evento
+              </span>
+              <span id="y">Empresa
+              </span>
+                
+                
+                
+              </span>
+            </h3>
+           </strong>
+          
+
+             
+         </div>
+
+         <div class="botones_inicio">
+             <div id="contacta_me">
+               <a  onclick="navSection('Concacto')" href="#">Contacta me</a>
+             </div>
+             <!--si fuera un documento seria asi
+            <a href="carpeta_docuemnto/nombre_archivo.extencion">dercargar archivo</a>
+             -->
+             <div id="conoce_mis_trabajos">
+              <a  onclick="navSection('Portafolio')" href="#">Ver Catalogo</a>
+             </div>
+
+         </div>
+
+        </section>
+
+
+
+    	<section class="slide" id="Conocenos" style="display:none;">
+            <span>Quienes somos </span>
+            <div id="contenedor_conocenos">
+              <div class="contenedor_textos1">
+                  <div id="titulo1"><p>Misión</p></div>
+                  <div id="textos1_conocenos">
+                   <span>Promover la imagen de su empresa o negocio y dar a conocer sus productos  o servicios a través de nuestra publicidad Impresa
+                   </span>
+                  
+                  </div>
+              </div>
+              <div id="div_img_conocenos">
+                    <figure>
+                      <img  src="img/conocenos-img.jpg">
+                    </figure>
+                  </div>
+              <div class="contenedor_textos2">
+                  <div id="titulo2"><p>Visión</p></div>
+                  <div id="textos2_conocenos">
+                    <span>
+                      Ser tu primera opción para promocionar tus productos o servicios a través de nuestra publicidad y así mismo.
+                    </span>
+                  
+                  </div>
+              </div>
+            </div>
+     
+
+      </section>
+    	<section class="slide" id="Trabajos" style="display:none;">
+        <div id="content_Trabajos">
+        
+
+   <section class="Trabajos">
+    
+    <div class="Trabajos-container">
+      <section class="Trabajos-item">
+        <img src="img/1.jpg" alt="" class="Trabajos-img">
+        <section class="Trabajos-text">
+          <h3>Tarjetas laminadas</h3>
+          <p>El cisne negro</p>
+           <P>20-04-2019</p>
+        </section>
+      </section>
+       <section class="Trabajos-item">
+        <img src="img/1.jpg" alt="" class="Trabajos-img">
+        <section class="Trabajos-text">
+          <h3>Tarjetas laminadas</h3>
+          <p>El cisne negro</p>
+           <P>20-04-2019</p>
+        </section>
+      </section>
+       <section class="Trabajos-item">
+        <img src="img/1.jpg" alt="" class="Trabajos-img">
+        <section class="Trabajos-text">
+          <h3>Tarjetas laminadas</h3>
+          <p>El cisne negro</p>
+           <P>20-04-2019</p>
+        </section>
+      </section>
+     
+      
+    </div>
+  </section>
+      
+    </section>
+      </section>
+    	<section class="slide" id="Portafolio" style="display:none;">
+        <div id="content_portfolio">
+          <div id="categorias">
+        <h2 onClick = "SearchJobs('todos')">todos</h2>
+        <h2 onClick = "SearchJobs('offset')">offset</h2>
+        <h2 onClick = "SearchJobs('sublimación')">sublimación</h2>
+        <h2 onClick = "SearchJobs('Lonas')">Lonas</h2>
+        <h2 onClick = "SearchJobs('Más')">Más</h2>
+      </div>
+
+      <div id="jobs">
+        <article class="offset tarjeta_normal">
+         <div class="tarjeta-wrap">
+             <div class="tarjetas">
+                <div class="adelante_tarjetas"><img src="img/1.jpg"><span>Tarjeta normal 4x1 ó 4x0 $120</span></div>
+                
+                <div class="atras_tarjetas">
+                  
+                    <p>Un millar de Tarjetas de Presentación</p>
+                    <p></p>
+                    <p>con barniz brillante al frente,todo color</p>
+                    <p></p>
+                    <p>al frente,vueltaa blanco y negro</p>
+                    <p></p>
+                    <p>Papel: Couche de 300 gramos</p>
+                     <p></p>
+                    <p>Tiempo de entrega: Al dia Siguiente</p><p></p>
+                    <p>Resección de archivos: Antes de las 2 pm</p>
+                  
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="offset tarjeta_barnizada">
+         <div class="tarjeta-wrap">
+             <div class="tarjetas">
+                <div class="adelante_tarjetas"><img src="img/1.jpg"><span>Tarjeta barnizada 4x4 $150</span></div>
+                
+                <div class="atras_tarjetas">
+                  
+                    <p>Un millar de tarjetas de laminado mate, a todo color frente y vuelta</p>
+                    <p></p>
+                    <p>Papel: Couche de 300 gramos</p>
+                    <p></p>
+                    <p>Tiempo de entrega:Cada viernes</p>
+                    <p></p>
+                    <p>Resección de archivos:se recibe hasta el jueves a medio día</p>
+                  
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="offset">
+         <div class="tarjeta-wrap">
+             <div class="tarjetas">
+                <div class="adelante_tarjetas"><img src="img/1.jpg"><span>Tarjeta laminada 4x4 $210</span></div>
+                
+                <div class="atras_tarjetas">
+                  
+                    <p>Un millar de tarjetas de laminado mate, a todo color frente y vuelta.</p>
+                    <p></p>
+                    <p>Papel: Couche de 300 gramos</p>
+                    <p></p>
+                    <p>Tiempo de entrega:Cada viernes</p>
+                    <p></p>
+                    <p>Resección de archivos: Se recibe hasta el jueves a medio día</p>
+                  
+              </div>
+            </div>
+          </div>
+        </article>
+
+         <article class="offset tarjeta_laminada">
+         <div class="tarjeta-wrap">
+             <div class="tarjetas">
+                <div class="adelante_tarjetas"><img src="img/1.jpg"><span>Tarjeta laminada con barniz a registro 4x4 $400</span></div>
+                
+                <div class="atras_tarjetas">
+                  
+                    <p>Un millar de tarjetas con un registro, un laminado mate, un todo color frente y vuelta.</p>
+                    <p></p>
+                    <p>Papel: Couche de 300 gramos</p>
+                     <p></p>
+                    <p>Tiempo de entrega:Cada viernes</p> <p></p>
+                    <p>Resección de archivos: Se recibe hasta el jueves a medio día</p>
+                  
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="offset volante_1/4_4X1">
+         <div class="tarjeta-wrap">
+             <div class="volantes">
+                <div class="adelante_volantes"><img src="img/1.jpg"><span>Volante 1/4 carta 4x1 ó 4x0 $200</span></div>
+                
+                <div class="atras_volantes">
+                  
+                    <p>Un millar de volantes tamaño 1/4 de carta, color al frente, vuelta blanco y negro</p>
+                    <p></p>
+                    <p>Papel: Couche de 150 gramos</p>
+                     <p></p>
+                    <p>Tiempo de entrega: Al dia Siguiente</p> <p></p>
+                    <p>Resección de archivos: Antes de las 2 pm</p>
+                  
+              </div>
+            </div>
+          </div>
+        </article>
+     
+        <article class="offset volante_1/4_4x4">
+         <div class="tarjeta-wrap">
+             <div class="volantes">
+                <div class="adelante_volantes"><img src="img/1.jpg"><span>Volante 1/4 de carta 4x4 $350</span></div>
+                
+                <div class="atras_volantes">
+                  
+                    <p>Un millar de volantes tamaño 1/4 de carta, a todo color frente y vuelta.</p>
+                    <p></p>
+                    <p>Papel: Couche de 150 gramos</p>
+                    <p></p>
+                    <p>Tiempo de entrega: 2 entregas por semana</p><p></p>
+                    <p>Resección de archivos: Antes de las 2 pm</p>
+                  
+              </div>
+            </div>
+          </div>
+        </article>
+
+          <article class="offset volante_1/2_4x1">
+         <div class="tarjeta-wrap">
+             <div class="volantes">
+                <div class="adelante_volantes"><img src="img/1.jpg"><span>Volante 1/2 de carta 4x1 ó 4x0 $300</span></div>
+                
+                <div class="atras_volantes">
+                  
+                    <p>Un millar de volantes tamaño 1/2 de carta, color al frente, vuelta blanco y negro.</p>
+                    <p></p>
+                    <p>Papel: Couche de 150 gramos</p>
+                    <p></p>
+                    <p>Tiempo de entrega: Al dia Siguiente</p><p></p>
+                    <p>Resección de archivos: Antes de las 2 pm</p>
+                  
+              </div>
+            </div>
+          </div>
+        </article>
+
+         <article class="offset volante_1/2_4x4">
+         <div class="tarjeta-wrap">
+             <div class="volantes">
+                <div class="adelante_volantes"><img src="img/1.jpg"><span>Volante 1/2 de carta 4x4 $700</span></div>
+                
+                <div class="atras_volantes">
+                  
+                    <p>Un millar de volantes tamaño 1/2 de carta, a todo color al frente y vuelta.</p>
+                    <p></p>
+                    <p>Papel: Couche de 150 gramos</p>
+                    <p></p>
+                    <p>Tiempo de entrega: 2 entregas por semana</p><p></p>
+                    <p>Resección de archivos: Antes de las 2 pm</p>
+                  
+              </div>
+            </div>
+          </div>
+        </article>
+
+         <article class="offset volante_carta_4x1">
+         <div class="tarjeta-wrap">
+             <div class="volantes">
+                <div class="adelante_volantes"><img src="img/1.jpg"><span>Volante  carta 4x1 ó 4x0 $600</span></div>
+                
+                <div class="atras_volantes">
+                  
+                    <p>Un millar de volantes tamaño carta, color al frente, vuelta blanco y negro.</p>
+                    <p></p>
+                    <p>Papel: Couche de 150 gramos</p>
+                    <p></p>
+                    <p>Tiempo de entrega: Al dia Siguiente</p><p></p>
+                    <p>Resección de archivos: Antes de las 2 pm</p>
+                  
+              </div>
+            </div>
+          </div>
+        </article>
+
+         <article class="offset volante_carta_4x4">
+         <div class="tarjeta-wrap">
+             <div class="volantes">
+                <div class="adelante_volantes"><img src="img/1.jpg"><span>Volante  carta 4x4 $1200</span></div>
+                
+                <div class="atras_volantes">
+                  
+                    <p>Un millar de volantes tamaño carta, color al frente, vuelta blanco y negro.</p>
+                    <p></p>
+                    <p>Papel: Couche de 150 gramos</p>
+                    <p></p>
+                    <p>Tiempo de entrega: 2 entregas por semana</p><p></p>
+                    <p>Resección de archivos: Antes de las 2 pm</p>
+                  
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="offset volante_tabloide_4x1">
+         <div class="tarjeta-wrap">
+             <div class="volantes">
+                <div class="adelante_volantes"><img src="img/1.jpg"><span>Volante  Tabloide 4x1 0 4x0 $1100</span></div>
+                
+                <div class="atras_volantes">
+                  
+                    <p>Un millar de volantes tamaño tabloide, color al frente, vuelta blanco y negro.</p>
+                    <p></p>
+                    <p>Papel: Couche de 150 gramos</p>
+                    <p></p>
+                    <p>Tiempo de entrega:Al dia siguiente</p><p></p>
+                    <p>Resección de archivos: Antes de las 2 pm</p>
+                  
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="offset dipticos">
+         <div class="tarjeta-wrap">
+             <div class="Dip_Trip">
+                <div class="adelante_Dip_Trip"><img src="img/1.jpg"><span>Diptico 4x4 0 4x1 $1200</span></div>
+                
+                <div class="atras_Dip_Trip">
+                  
+                    <p>Un millar de Dipticos  tamaño carta,a todo color frente y vuelta,dobles no incluido en el precio,extra $45 por dobles, 2 dobleces.</p>
+                    <p></p>
+                    <p>Papel: Couche de 300 gramos</p>
+                    <p></p>
+                    <p>Tiempo de entrega:Al dia siguiente</p><p></p>
+                    <p>Resección de archivos: Antes de las 2 pm</p>
+                  
+              </div>
+            </div>
+          </div>
+        </article>
+         <article class="offset triptico">
+         <div class="tarjeta-wrap">
+             <div class="Dip_Trip">
+                <div class="adelante_Dip_Trip"><img src="img/1.jpg"><span> Triptico 4x4 0 4x1 $1200</span></div>
+                
+                <div class="atras_Dip_Trip">
+                  
+                    <p>Un millar de Tripticos tamaño carta,a todo color frente y vuelta,dobles no incluido en el precio,extra $45 por dobles, 3 dobleces.</p>
+                    <p></p>
+                    <p>Papel: Couche de 300 gramos</p>
+                    <p></p>
+                    <p>Tiempo de entrega:Al dia siguiente</p><p></p>
+                    <p>Resección de archivos: Antes de las 2 pm</p>
+                  
+              </div>
+            </div>
+          </div>
+        </article>
+         <article class="offset poster_4x1">
+         <div class="tarjeta-wrap">
+             <div class="Posters">
+                <div class="adelante_Posters"><img src="img/1.jpg"><span> Poster 4x1 $1200</span></div>
+                
+                <div class="atras_Posters">
+                  
+                    <p> Un millar de Posters tamaño Tabloide,Color al frente y vuelta blanco y negro.</p>
+                    <p></p>
+                    <p>Papel: Couche de 300 gramos</p>
+                    <p></p>
+                    <p>Tiempo de entrega:Al dia siguiente</p><p></p>
+                    <p>Resección de archivos: Antes de las 2 pm</p>
+                  
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="offset poster_4x4">
+         <div class="tarjeta-wrap">
+             <div class="Posters">
+                <div class="adelante_Posters"><img src="img/1.jpg"><span> Poster 4x4 $2400</span></div>
+                
+                <div class="atras_Posters">
+                  
+                    <p> Un millar de Posters tamaño Tabloide,Color al frente y vuelta.</p>
+                    <p></p>
+                    <p>Papel: Couche de 300 gramos</p>
+                    <p></p>
+                    <p>Tiempo de entrega:Al dia siguiente</p><p></p>
+                    <p>Resección de archivos: Antes de las 2 pm</p>
+                  
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="offset nota_1/4_1_tinta">
+         <div class="tarjeta-wrap">
+             <div class="nota">
+                <div class="adelante_nota"><img src="img/1.jpg"><span> Nota 1/4 $850</span></div>
+                
+                <div class="atras_nota">
+                  
+                    <p>Un millar de Notas un cuarto de carta original y una copia,un color con la posibilidad de ser a 2 colores costo extra ($200),Cortadas y pegadas en blogs de 100. </p>
+                    <p></p>
+                    <p>Papel:Auto Copiante</p>
+                    <p></p>
+                    <p>Acabados:Corte,Pegado,</p><p>Folio.</p>
+                    <p></p>
+                    <p>Tiempo de entrega:4 dias hábiles</p><p></p>
+                  
+              </div>
+            </div>
+          </div>
+        </article>
+         <article class="offset nota_14CTintas">
+         <div class="tarjeta-wrap">
+             <div class="nota">
+                <div class="adelante_nota"><img src="img/1.jpg"><span> Nota 1/4 selección $2500</span></div>
+                
+                <div class="atras_nota">
+                  
+                    <p> Un millar de Notas un cuarto de carta original y una copia,a todo color frente,Cortadas y pegadasen blogs de 100.</p>
+                    <p></p>
+                    <p>Papel:Auto Copiante</p>
+                    <p></p>
+                    <p>Acabados:Corte,Pegado,</p><p>Folio.</p>
+                    <p></p>
+                    <p>Tiempo de entrega:4 dias hábiles</p><p></p>
+                  
+              </div>
+            </div>
+          </div>
+        </article>
+          <article class="offset nota_1/2_4_tintas">
+         <div class="tarjeta-wrap">
+             <div class="nota">
+                <div class="adelante_nota"><img src="img/1.jpg"><span> Nota 1/2  $1500</span></div>
+                
+                <div class="atras_nota">
+                  
+                    <p>Un millar de Notas media carta original y una copia,un color con la posibilidad de ser a 2 colores costo extra ($200),Cortadas y pegadas en blogs de 100. </p>
+                    <p></p>
+                    <p>Papel:Auto Copiante</p>
+                    <p></p>
+                    <p>Acabados:Corte,Pegado,</p><p>Folio.</p>
+                    <p></p>
+                    <p>Tiempo de entrega:4 dias hábiles</p><p></p>
+                  
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="offset nota_1/2_4_tintas">
+         <div class="tarjeta-wrap">
+             <div class="nota">
+                <div class="adelante_nota"><img src="img/1.jpg"><span> Nota 1/2 selección $3500</span></div>
+                
+                <div class="atras_nota">
+                  
+                    <p>Un millar de Notas media carta original y una copia,a todo color frente,Cortadas y pegadasen blogs de 100.</p>
+                    <p></p>
+                    <p>Papel:Auto Copiante</p>
+                    <p></p>
+                    <p>Acabados:Corte,Pegado,</p><p>Folio.</p>
+                    <p></p>
+                    <p>Tiempo de entrega:4 dias hábiles</p><p></p>
+                  
+              </div>
+            </div>
+          </div>
+        </article>
+        
+          <article class="offset boletos">
+         <div class="tarjeta-wrap">
+             <div class="mas_papeleria">
+                <div class="adelantemas_papeleria"><img src="img/1.jpg"><span>Boletos para rifa $400</span></div>
+                
+                <div class="atrasmas_papeleria">
+                  
+                    <p>Un millar de Notas un cuarto de carta original y una copia,un color con la posibilidad de ser a 2 colores costo extra ($200),Cortadas y pegadas en blogs de 100.</p>
+                    <p></p>
+                    <p>Papel:Bond</p>
+                    <p></p>
+                    <p>Acabados:Corte,Pegado,</p><p>Folio.</p>
+                    <p></p>
+                    <p>Tiempo de entrega:4 dias hábiles</p><p></p>
+                  
+              </div>
+            </div>
+          </div>
+        </article>
+         <article class="offset membretada_1_tinta">
+         <div class="tarjeta-wrap">
+             <div class="mas_papeleria">
+                <div class="adelantemas_papeleria"><img src="img/1.jpg"><span>Hoja Membretada $900</span></div>
+                
+                <div class="atrasmas_papeleria">
+                  
+                    <p>Un millar de Hojas Menbretadas carta,un color con la posibilidad de ser a 2 colores costo extra ($200).</p>
+                    <p></p>
+                    <p>Papel:Bond</p>
+                    <p></p>
+                    <p>Tiempo de entrega:4 dias hábiles</p><p></p>
+                  
+              </div>
+            </div>
+          </div>
+        </article>
+           <article class="offset membretada_4_tinta">
+         <div class="tarjeta-wrap">
+             <div class="mas_papeleria">
+                <div class="adelantemas_papeleria"><img src="img/1.jpg"><span>Hoja Membretada selección $2500</span></div>
+                
+                <div class="atrasmas_papeleria">
+                  
+                    <p>Un millar de Hojas Menbretadas carta,a todo color por el frente.</p>
+                    <p></p>
+                    <p>Papel:Bond</p>
+                    <p></p>
+                    <p>Tiempo de entrega:4 dias hábiles</p><p></p>
+                  
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+
+
+        <article class="sublimación taza">
+         <div class="tarjeta-wrap">
+             <div class="T_blanca">
+                <div class="adelante_T_blanca"><img src="img/1.jpg"><span>Taza blanca De Cerámica $22 c/u por caja</span></div>
+                
+                <div class="atras_T_blanca">
+                                      
+                    <p>Capacidad: 11 onzas</p>
+                    <p></p>
+                    <p>Área sublimable: 8.5x19cm</p>
+                    <p></p>
+                    <p>Alto: 9.7cm</p>
+                    <p></p>
+                    <p>Diámetro externo: 8.3cm</p>
+                    <p></p>
+                    <p>Tiempo de entrega: Al dia Siguiente</p>
+                  
+              </div>
+            </div>
+          </div>
+        </article>
+
+         <article class="Más credencial">
+         <div class="tarjeta-wrap">
+             <div class="cred_pvc">
+                <div class="adelante_cred_pvc"><img src="img/1.jpg"><span>Credencial de PVC $10 c/u</span></div>
+                
+                <div class="atras_cred_pvc">
+                                      
+                   
+                    <p>Impresa a todo color frente y vuelta</p>
+                     <p></p>
+                    <p>Medidas: 8.7x4.5 cm</p>
+                     <p></p>
+                    <p>Tiempo de entrega: Al dia Siguiente</p>
+                     <p></p>
+                    <p>Pedido Minimo: 10 piezas</p>
+                  
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="Lonas">
+         <div class="tarjeta-wrap">
+             <div class="Lona_13onzas">
+                <div class="adelante_Lona_13onzas"><img src="img/1.jpg"><span>Lona 13 onzas $60 metro cuadrado</span></div>
+                
+                <div class="atras_Lona_13onzas">
+                                      
+                   
+                    <p>Medidas: segun tu necesidad</p>
+                      <p></p>
+                    <p>Tiempo de entrega: Al dia Siguiente</p>
+                  
+              </div>
+            </div>
+          </div>
+        </article>
+    
+
+
+ 
+      </div>  
+      </div> 
+    </section>
+
+    	<section class="slide" id="Concacto" style="display:none;">
+        <span id="span_contactanos">Contactanos</span>
+       
+          <div class="cuerpo_contacto_facebook">
+              <div class="iconos_contacto_linkeados_facebook">
+                  <a id="c_facebook" href="" target="_blank"></a>
+                  <div id="c_facebook_texto">Facebook</div>
+                  <div id="c_facebook_texto_link" >
+                      <a href="https://www.facebook.com/pg/Impresos-M%C3%A9ndez-615135268961276/posts/" target="_blank">Impresos Mendez</a>
+                  </div>
+              </div>
+          </div>
+        
+        
+          <div class="cuerpo_contacto_yahoo">    
+              <div class="iconos_contacto_linkeados_yahoo">
+                  <a id="c_yahoo" href="" target="_blank"></a>
+                  <div id="c_yahoo_texto">Yahoo</div>
+                  <div id="c_yahoo_texto_link" >
+                      <a href="mailto:impresosmendez_4@yahoo.com" target="_blank">impresosmendez_4@yahoo.com</a>
+                  </div>
+               </div>
+          </div>
+         
+       
+          <div class="cuerpo_contacto_gmail">         
+               <div class="iconos_contacto_linkeados_gmail">
+                  <a id="c_gmail" href="" target="_blank"></a>
+                  <div id="c_gmail_texto">Gmail</div>
+                  <div id="c_gmail_texto_link" >
+                      <a href="mailto:impresosmendez@gmail.com" target="_blank">impresosmendez@gmail.com</a>
+                  </div>
+              </div>
+          </div>
+         
+         < 
+          <div class="cuerpo_contacto_whatsapp">
+              <div class="iconos_contacto_NO_linkeados_whatsapp">
+                  <div id="c_whatsapp"></div>
+                  <p id="c_whatsapp_texto">WhatsApp</p>
+                  <div id="c_whatsapp_texto_link">
+                    <a href="https://wa.me/5215546157552" target="_blank">Un WhatsApp a: <p>55-4615-7552</p></a>
+                  </div>
+              </div>
+          </div>
+        
+         
+
+          <div class="cuerpo_contacto_telefono">        
+              <div class="iconos_contacto_NO_linkeados_telefono">    
+                  <div id="c_telefono"></div>
+                  <p id="c_telefono_texto">Celular</p>
+                  <div id="c_telefono_texto_link">
+                    <a href="tel:+5215546157552" target="_blank">Lamar a: <p>4615-7552</p></a>
+                  </div>
+              </div>    
+          </div>
+         
+
+        </section>
+    
+
+    
+    <div id="formulario_contacto">
+    	<div id="cerrar_formulario"></div>
+    	
+    	<form action="formulario_contacto.php" id="formulario1" name="formulario1" method="post">
+    		
+    		<!--<div id="cerrar_formulario"></div>-->
+    		<figure id="img_mensaje"><img src="iconos/img_mensaje.png" alt=""></figure>
+    		<p id=Enviar_tu_mensaje>Escribenos un Mensaje</p>
+
+    		<input type="text" id="nombre" name="nombre" placeholder="Tu nombre" 
+    		onfocus="this.placeholder=''" onblur="this.placeholder='Tu nombre'">
+
+    		<input type="email" id="email" name="email" placeholder="Tu email" 
+    		onfocus="this.placeholder=''" onblur="this.placeholder='Tu email'">
+
+    		<input type="rel" id="celular" name="celular" placeholder="Tu número Telefónico" 
+    		onfocus="this.placeholder=''" onblur="this.placeholder='Tu número Telefónico'">
+
+    		<textarea  id="mensaje1" name="mensaje1"  placeholder="Tu Mensaje" onfocus="this.placeholder=''" onblur="this.placeholder='Tu Mensaje'"></textarea>
+
+    		<input id="boton_enviar"  type="submit" name="Submit" value="Enviar">
+
+    	</form>
+    </div>
+    <footer>
+      <span id="comparte">Comparte Impresos Mendez en tus redes sociales</span> 
+        <div class="redes_sociales">
+         
+            <a id="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://impresosmendez.com" target="_blank"></a>
+            <a id="twitter" href="https://twitter.com/intent/tweet?text=Te%20recomiendo%20Impresos%20Mendez%20para%20Publicidad%20Impresa%20y%20Muchas%20cosas%20mas%20Impresas&url=https://www.impresosmendez.com"
+            target="_blank"></a>
+            <!--Quitar instagram y poner linkedin--->
+            <!--<a id="instagram" href="https://www.instagram.com/?hl=es-la"
+            target="_blank"></a>-->
+            <a id="whatsapp" href="https://api.whatsapp.com/send?text=Te%20recomiendo%20Impresos%20Mendez%20para%20Publicidad%20Impresa%20y%20Muchas%20cosas%20mas%20Impresas%20https://www.impresosmendez.com" target="_blank"></a>
+        </div>
+       <p id="derechos">&copy;2019 All right reserved | Privacity Policy</p> 
+    </footer>
+
+      <script type="text/javascript" src="js/particles.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+    
+    <!--hide contact form--->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.js"></script>-->
+    <script type="text/javascript">
+    	  $(document).ready(function(){
+                $('#cerrar_formulario').click(function(){
+                     $('#formulario_contacto').toggleClass('active')
+                     $('#cerrar_formulario').toggleClass('active')
+                                                         });
+                                      });
+    </script>
+
+<!-- funciona pero no es lo que quiero lo hace de arriba a abajo
+  <script type="text/javascript">
+    	  $(document).ready(function(){
+                $("#cerrar_formulario").click(function(){
+                     $("#formulario_contacto").slideToggle("slow");
+                                                         });
+                                      });
+    </script>
+-->
+</body>
+</html>
+
